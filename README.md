@@ -3,14 +3,11 @@
 Logical game on phomegap for mobile.
 
 ## Dependencies
----------------
 * [ADT (Android Developer Tools) Bundle](http://developer.android.com/sdk/index.html)
 * [Apache Ant](http://ant.apache.org/bindownload.cgi)
 * [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 ## Build From Source
---------------------
-
 * Install globally
     * grunt-cli `npm install -g grunt-cli`
     * bower `npm install -g bower`
