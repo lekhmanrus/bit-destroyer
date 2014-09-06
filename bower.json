@@ -1,0 +1,35 @@
+{
+  "name": "bit-destroyer",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lekhmanrus/bit-destroyer",
+  "authors": [
+    "Ruslan Lekhman"
+  ],
+  "description": "Logical game on phomegap for mobile.",
+  "main": "Gruntfile.js",
+  "keywords": [
+    "phonegap",
+    "game",
+    "bit-destroyer",
+    "logical",
+    "mobile",
+    "android",
+    "ios"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.23",
+    "angular-touch": "~1.2.23",
+    "bootstrap": "latest",
+    "jquery": "~2.1.1",
+    "normalize.css": "latest",
+    "ngprogress": "~1.0.6"
+  }
+}

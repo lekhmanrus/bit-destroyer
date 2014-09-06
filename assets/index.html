@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BitDestroyerApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Bit Destroyer</title>
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- build:style bundle -->
+    <!-- /build -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- build:script bundle -->
+    <!-- /build -->
+  </head>
+  <body ng-controller="MainCtrl">
+
+    <div>
+      <button type="button" class="btn btn-primary" ng-click="start()">Start</button>
+      <button type="button" class="btn btn-primary" ng-click="addTime()">Add time</button>
+    </div>
+    <playfield></playfield>
+
+    <div class="timer">
+      Time left: 
+      <span ng-bind="timeLeft"></span>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.timer {
+  position: absolute;
+  right:    25px;
+  bottom:   25px;
+  width:    175px;
+}
+
+#ngProgress-container {
+  top:    auto;
+  bottom: 0px;
+  background-color: #EEEEEE;
+}

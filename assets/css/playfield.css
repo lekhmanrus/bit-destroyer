@@ -1,0 +1,45 @@
+playfield {
+  width: 408px;
+  height: 408px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-around;
+  -moz-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+playfield .play-item {
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #EEEEEE;
+  border-collapse: 
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
+  -o-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+  -webkit-flex-grow: 0;
+  -moz-flex-grow: 0;
+  -o-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+  line-height: 100px;
+  text-align: center;
+}

@@ -1,0 +1,49 @@
+{
+  "name": "bit-destroyer",
+  "description": "Logical game on phomegap for mobile.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lekhmanrus/bit-destroyer",
+  "author": {
+    "name": "Ruslan Lekhman",
+    "email": "lekhman-ruslan@i.ua"
+  },
+  "license": "MIT",
+  "readme": "https://github.com/lekhmanrus/bit-destroyer/blob/master/README.md",
+  "private": false,
+  "keywords": [
+    "phonegap",
+    "game",
+    "bit-destroyer",
+    "logical",
+    "mobile",
+    "android",
+    "ios"
+  ],
+  "contributors": [
+    {
+      "name": "Ruslan Lekhman",
+      "email": "lekhman-ruslan@i.ua"
+    }
+  ],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/lekhmanrus/bit-destroyer"
+  },
+  "bugs": {
+    "url": "https://github.com/lekhmanrus/bit-destroyer/issues"
+  },
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-html-build": "~0.3.2",
+    "grunt-wiredep": "~1.8.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "load-grunt-tasks": "~0.6.0",
+    "phonegap": "*"
+  }
+}
