@@ -23,7 +23,9 @@ playfield {
   justify-content: space-around;
 }
 
-playfield .play-item {
+playitem {
+  font-family: 'Audiowide';
+  font-size: 30pt;
   width: 100px;
   height: 100px;
   margin: 0px;
@@ -42,4 +44,37 @@ playfield .play-item {
   flex-grow: 0;
   line-height: 100px;
   text-align: center;
+  color: #EEEEEE;
+}
+
+playitem .playitem-2 {
+  background-color: #777777;
+}
+
+playitem .playitem-4 {
+  background-color: #CDBFE3;
+}
+
+playitem .playitem-8 {
+  background-color: #6F5499;
+}
+
+playitem .playitem-16 {
+  background-color: #428bca;
+}
+
+playitem .playitem-32 {
+  background-color: #5bc0de;
+}
+
+playitem .playitem-64 {
+  background-color: #5cb85c;
+}
+
+playitem .playitem-128 {
+  background-color: #f0ad4e;
+}
+
+playitem .playitem-256 {
+  background-color: #d9534f;
 }

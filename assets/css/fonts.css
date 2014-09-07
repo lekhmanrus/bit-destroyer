@@ -6,3 +6,12 @@
        local('ArchitectsDaughter'),
        url(../fonts/ArchitectsDaughter.woff) format('woff');
 }
+
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Audiowide'),
+       local('Audiowide-Regular'),
+       url(../fonts/Audiowide-Regular.woff) format('woff');
+}

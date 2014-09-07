@@ -5,8 +5,8 @@ angular
 .service('Timer', ['ngProgress', function(ngProgress) {
   
   var timer = { };
-  timer.maxTime  = 1;
-  timer.timeLeft = 1;
+  timer.maxTime  = 60;
+  timer.timeLeft = 60;
   timer.timeLeftPercent = 100;
   timer.height = '25px';
   timer.color = '#428bca';
@@ -21,7 +21,6 @@ angular
   };
 
   var getPercentStep = function() {
-    console.log((100 / timer.maxTime) * getStep());
     return (100 / timer.maxTime) * getStep();
   };
 
