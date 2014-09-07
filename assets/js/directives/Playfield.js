@@ -8,6 +8,7 @@ angular
     templateUrl: 'partials/directive/Playfield.html',
 
     link: function($scope) {
+      $scope.animation = Playfield.animation;
       $scope.items = Playfield.field;
     }
   };

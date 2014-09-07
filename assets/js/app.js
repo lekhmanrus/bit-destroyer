@@ -15,34 +15,30 @@ angular.module('BitDestroyerApp', [
   'ngTouch'
 ])
 
-.run(['hotkeys', function(hotkeys) {
+.run(['Playfield', 'hotkeys', function(Playfield, hotkeys) {
 
   hotkeys.add({
     combo: 'left',
-    description: 'This one goes to 11',
     callback: function() {
-      console.log('left');
+      Playfield.moveItems('left');
     }
   });
   hotkeys.add({
     combo: 'right',
-    description: 'This one goes to 11',
     callback: function() {
-      console.log('right');
+      Playfield.moveItems('right');
     }
   });
   hotkeys.add({
     combo: 'up',
-    description: 'This one goes to 11',
     callback: function() {
-      console.log('up');
+      Playfield.moveItems('up');
     }
   });
   hotkeys.add({
     combo: 'down',
-    description: 'This one goes to 11',
     callback: function() {
-      console.log('down');
+      Playfield.moveItems('down');
     }
   });
 
@@ -74,18 +70,18 @@ angular.module('BitDestroyerApp', [
     if(Math.abs(delta.x) > epsilon || Math.abs(delta.y) > epsilon) {
       if(Math.abs(delta.x) > Math.abs(delta.y)) {
         if(delta.x < 0) {
-          console.log('left');
+          Playfield.moveItems('left');
         }
         else {
-          console.log('right');
+          Playfield.moveItems('right');
         }
       }
       else {
         if(delta.y > 0) {
-          console.log('up');
+          Playfield.moveItems('up');
         }
         else {
-          console.log('down');
+          Playfield.moveItems('down');
         }
       }
     }
