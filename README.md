@@ -13,7 +13,6 @@ Logical game on phomegap for mobile.
     * bower `npm install -g bower`
     * phonegap `npm install -g phonegap`
 * Install npm modules `npm install`
-* Install bower components `bower install`
 * Build project `grunt install`
 * Use
     * `grunt` for development and wathing results (HTML-file `out/www/index.html`)
