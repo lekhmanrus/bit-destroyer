@@ -24,8 +24,6 @@ playfield {
 }
 
 playitem {
-  font-family: 'Audiowide';
-  font-size: 30pt;
   width: 100px;
   height: 100px;
   margin: 0px;
@@ -45,6 +43,10 @@ playitem {
   line-height: 100px;
   text-align: center;
   color: #EEEEEE;
+}
+
+playitem div {
+  font-family: 'Audiowide';
 }
 
 playitem .playitem-2 {
