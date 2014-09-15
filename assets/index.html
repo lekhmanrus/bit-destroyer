@@ -18,10 +18,16 @@
   </head>
   <body ng-controller="MainCtrl">
 
-    <div>
-      <button type="button" class="btn btn-primary" ng-click="start()">Start</button>
-      <button type="button" class="btn btn-primary" ng-click="addTime()">Add time</button>
-    </div>
+    <menu class="main">
+      <li class="logo"></li>
+      <li ng-click="start()">Start</li>
+      <li ng-click="addTime()">Add time</li>
+      <li class="best">
+        Best: 
+        <span class="score">100 000</span>
+      </li>
+    </menu>
+
     <playfield></playfield>
 
     <div class="timer">

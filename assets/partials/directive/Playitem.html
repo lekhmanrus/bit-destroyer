@@ -1,1 +1,2 @@
-<div ng-if="item.type" ng-bind="item.type" class="playitem-{{ item.type }} am-fade"></div>
+<div ng-bind="item.type" ng-show="item.type"
+     class="playitem-{{ item.type }} {{ item.animation }}"></div>

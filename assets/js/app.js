@@ -10,7 +10,6 @@ angular.module('BitDestroyerApp', [
   'BitDestroyerApp.services',
   'BitDestroyerApp.filters',
   'cfp.hotkeys',
-  'ngAnimate',
   'ngProgress',
   'ngTouch'
 ])
@@ -47,12 +46,14 @@ angular.module('BitDestroyerApp', [
       touch = false;
 
   document.addEventListener('touchstart', function(e) {
-    e.preventDefault();
+    e.defaultPrevented();
+    //e.preventDefault();
     touch = true;
   }, false);
 
   document.addEventListener('touchmove', function(e) {
-    e.preventDefault();
+    //e.preventDefault();
+    e.defaultPrevented();
     if(touch) {
       start.x = e.changedTouches[0].pageX;
       start.y = e.changedTouches[0].pageY;
@@ -63,7 +64,8 @@ angular.module('BitDestroyerApp', [
   }, false);
 
   document.addEventListener('touchend', function(e) {
-    e.preventDefault();
+    e.defaultPrevented();
+    //e.preventDefault();
     var delta = { x: end.x - start.x, y: start.y - end.y },
         epsilon = 25;
 

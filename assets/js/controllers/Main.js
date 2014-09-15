@@ -22,5 +22,4 @@ angular
     Timer.addTime(20);
   };
 
-
 }]);
