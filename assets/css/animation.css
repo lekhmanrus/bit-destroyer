@@ -1,32 +1,29 @@
-.fade-in/*,
-.fade-in.fade-in-add,
-.fade-in.ng-hide-remove,
-.fade-in.ng-move*/ {
-  /*-webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;*/
-  -webkit-animation-duration: 5.3s;
-  animation-duration: 5.3s;
+.fade-in {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
-  /*opacity: 1;*/
   visibility: visible;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-/*
-.fade-in.ng-enter {
-  visibility: hidden;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
 
-.fade-in.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}*/
+.fade-out {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
 
 .my-slide {
   -webkit-animation-duration: 0.3s;
@@ -100,7 +97,7 @@
   -webkit-animation-name: slideFromLeftThree;
   animation-name: slideFromLeftThree;
 }
-.my-slide-right-3 {
+.my-slide-right-4 {
   -webkit-animation-name: slideFromLeftFour;
   animation-name: slideFromLeftFour;
 }
@@ -315,5 +312,22 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

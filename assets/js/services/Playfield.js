@@ -36,11 +36,14 @@ angular
     playfield.field.push(obj);
   }
 
-  for(var i = 0; i < items / 4; i++) {
+  /*for(var i = 0; i < items / 4; i++) {
     if(!addItem()) {
       i--;
     }
-  }
+  }*/
+  playfield.field[0] = angular.copy(Playitem[3]);
+  playfield.field[4] = angular.copy(Playitem[3]);
+  /*playfield.field[3] = angular.copy(Playitem[2]);*/
 
   playfield.getFilledItems = function() {
     return playfield.field.filter(function(e) {
@@ -65,16 +68,29 @@ angular
   };
 
   playfield.moveItems = function(direction) {
+    var isMove = false;
     if(direction === 'left') {
       for(var i = 0; i < playfield.rows; i++) {
         var counter = 0;
         for(var j = 0; j < playfield.cols; j++) {
           var item = playfield.getItem(i, j);
           if(item.type) {
-            if(j > 0 && j != counter) {
-              item.animation = 'my-slide my-slide-left-' + (j - counter);
-              playfield.setNullItem(i, j);
-              playfield.setItem(i, counter, item);
+            if(j > 0) {
+              var k    = j - 1,
+                  prev = playfield.getItem(i, k);
+              for(; k > 0 && !prev.type; k--, prev = playfield.getItem(i, k));
+              if(prev.type === item.type) {
+                isMove = true;
+                playfield.setNullItem(i, j);
+                playfield.setNullItem(i, k);
+                counter -= 2;
+              }
+              else if(j !== counter) {
+                isMove = true;
+                item.animation = 'my-slide my-slide-left-' + (j - counter);
+                playfield.setNullItem(i, j);
+                playfield.setItem(i, counter, item);
+              }
             }
             counter++;
           }
@@ -87,10 +103,23 @@ angular
         for(var j = 0; j < playfield.cols; j++) {
           var item = playfield.getItem(i, playfield.cols - 1 - j);
           if(item.type) {
-            if(j > 0 && j != counter) {
-              item.animation = 'my-slide my-slide-right-' + (j - counter);
-              playfield.setNullItem(i, playfield.cols - 1 - j);
-              playfield.setItem(i, playfield.cols - 1 - counter, item);
+            if(j > 0) {
+              var k    = j - 1,
+                  prev = playfield.getItem(i, playfield.cols - 1 - k);
+              for(; k > 0 && !prev.type; k--, prev = playfield.getItem(i, playfield.cols - 1 - k));
+              console.log(prev);
+              if(prev.type === item.type) {
+                isMove = true;
+                playfield.setNullItem(i, playfield.cols - 1 - j);
+                playfield.setNullItem(i, playfield.cols - 1 - k);
+                counter -= 2;
+              }
+              else if(j !== counter) {
+                isMove = true;
+                item.animation = 'my-slide my-slide-right-' + (j - counter);
+                playfield.setNullItem(i, playfield.cols - 1 - j);
+                playfield.setItem(i, playfield.cols - 1 - counter, item);
+              }
             }
             counter++;
           }
@@ -103,10 +132,22 @@ angular
         for(var i = 0; i < playfield.rows; i++) {
           var item = playfield.getItem(i, j);
           if(item.type) {
-            if(i > 0 && i != counter) {
-              item.animation = 'my-slide my-slide-up-' + (i - counter);
-              playfield.setNullItem(i, j);
-              playfield.setItem(counter, j, item);
+            if(i > 0) {
+              var k    = i - 1,
+                  prev = playfield.getItem(k, j);
+              for(; k > 0 && !prev.type; k--, prev = playfield.getItem(k, j));
+              if(prev.type === item.type) {
+                isMove = true;
+                playfield.setNullItem(i, j);
+                playfield.setNullItem(k, j);
+                counter -= 2;
+              }
+              else if(i !== counter) {
+                isMove = true;
+                item.animation = 'my-slide my-slide-up-' + (i - counter);
+                playfield.setNullItem(i, j);
+                playfield.setItem(counter, j, item);
+              }
             }
             counter++;
           }
@@ -119,10 +160,22 @@ angular
         for(var i = 0; i < playfield.rows; i++) {
           var item = playfield.getItem(playfield.rows - 1 - i, j);
           if(item.type) {
-            if(i > 0 && i != counter) {
-              item.animation = 'my-slide my-slide-down-' + (i - counter);
-              playfield.setNullItem(playfield.cols - 1 - i, j);
-              playfield.setItem(playfield.rows - 1 - counter, j, item);
+            if(i > 0) {
+              var k    = i - 1,
+                  prev = playfield.getItem(playfield.rows - 1 - k, j);
+              for(; k > 0 && !prev.type; k--, prev = playfield.getItem(playfield.rows - 1 - k, j));
+              if(prev.type === item.type) {
+                isMove = true;
+                playfield.setNullItem(playfield.rows - 1 - i, j);
+                playfield.setNullItem(playfield.rows - 1 - k, j);
+                counter -= 2;
+              }
+              else if(i !== counter) {
+                isMove = true;
+                item.animation = 'my-slide my-slide-down-' + (i - counter);
+                playfield.setNullItem(playfield.cols - 1 - i, j);
+                playfield.setItem(playfield.rows - 1 - counter, j, item);
+              }
             }
             counter++;
           }
@@ -132,7 +185,7 @@ angular
     else {
       throw new RangeError("Direction must be among 'left', 'right', 'up', 'down'.");
     }
-    if(playfield.getFilledItems().length < playfield.field.length) {
+    if(isMove && playfield.getFilledItems().length < playfield.field.length) {
       while(!addItem());
     }
   };
