@@ -18,14 +18,14 @@
   </head>
   <body ng-controller="MainCtrl">
 
-    <menu class="main">
-      <li class="logo"></li>
-      <li ng-click="start()">Start</li>
-      <li ng-click="addTime()">Add time</li>
-      <li class="best">
-        Best: 
-        <span class="score">100 000</span>
-      </li>
+    <div class="score">
+      <div class="best">Best: <span>100500</span></div>
+      <div class="player">Score: <span>0</span></div>
+    </div>
+
+    <menu id="controls">
+      <li><span class="glyphicon glyphicon-repeat"></span></li>
+      <li><span class="glyphicon glyphicon-align-justify"></span></li>
     </menu>
 
     <playfield></playfield>

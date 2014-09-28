@@ -13,3 +13,38 @@ body {
 html {
   /*height: 100%;*/
 }
+
+.score {
+  padding-left: 15px;
+}
+
+.score .best span {
+  color: #5CB85C;
+}
+
+menu#controls {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+menu#controls li {
+  height: 60px;
+  width: 60px;
+  margin-left: 1px;
+  line-height: 67px;
+  text-align: center;
+  background-color: #EEEEEE;
+  color: #777777;
+  float: left;
+  cursor: pointer;
+}
+
+menu#controls li:active,
+menu#controls li:hover {
+  border-top: 3px solid #428BCA;
+  line-height: 61px;
+}

@@ -2,7 +2,7 @@
 
 angular
 .module('BitDestroyerApp.services')
-.service('Playfield', [ 'Playitem', function(Playitem) {
+.service('Playfield', [ '$timeout', 'Playitem', function($timeout, Playitem) {
 
   var playfield = { };
 
@@ -36,14 +36,14 @@ angular
     playfield.field.push(obj);
   }
 
-  /*for(var i = 0; i < items / 4; i++) {
+  for(var i = 0; i < items / 4; i++) {
     if(!addItem()) {
       i--;
     }
-  }*/
-  playfield.field[0] = angular.copy(Playitem[3]);
+  }
+  /*playfield.field[0] = angular.copy(Playitem[3]);
   playfield.field[4] = angular.copy(Playitem[3]);
-  /*playfield.field[3] = angular.copy(Playitem[2]);*/
+  playfield.field[3] = angular.copy(Playitem[2]);*/
 
   playfield.getFilledItems = function() {
     return playfield.field.filter(function(e) {
@@ -107,7 +107,6 @@ angular
               var k    = j - 1,
                   prev = playfield.getItem(i, playfield.cols - 1 - k);
               for(; k > 0 && !prev.type; k--, prev = playfield.getItem(i, playfield.cols - 1 - k));
-              console.log(prev);
               if(prev.type === item.type) {
                 isMove = true;
                 playfield.setNullItem(i, playfield.cols - 1 - j);
@@ -188,6 +187,16 @@ angular
     if(isMove && playfield.getFilledItems().length < playfield.field.length) {
       while(!addItem());
     }
+    /*var m = '';
+    for(var i in playfield.field) {
+      if(i > 0 && i % 4 == 0) {
+        console.log(m);
+        m = '';
+      }
+      m += playfield.field[i].score + '  ';
+    }
+    console.log(m);*/
+    $timeout(angular.noop);
   };
 
   return playfield;
