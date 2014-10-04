@@ -48,3 +48,281 @@ menu#controls li:hover {
   border-top: 3px solid #428BCA;
   line-height: 61px;
 }
+
+
+@media screen and (max-width: 2560px) {
+  .score .best {
+    font-size: 55pt;
+  }
+  .score .best span {
+    font-size: 55pt;
+  }
+  .score .player {
+    font-size: 55pt;
+  }
+  .score .player span{
+    font-size: 55pt;
+  }
+
+}
+
+@media screen and (max-width: 1920px) {
+  .score .best {
+    font-size: 45pt;
+  }
+  .score .best span {
+    font-size: 45pt;
+  }
+  .score .player {
+    font-size: 45pt;
+  }
+  .score .player span{
+    font-size: 45pt;
+  }
+
+}
+
+
+@media screen and (max-width: 1280px) {
+  .score .best {
+    font-size: 25pt;
+  }
+  .score .best span {
+    font-size: 25pt;
+  }
+  .score .player {
+    font-size: 25pt;
+  }
+  .score .player span{
+    font-size: 25pt;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .score .best {
+    font-size: 45pt;
+  }
+  .score .best span {
+    font-size: 45pt;
+  }
+  .score .player {
+    font-size: 45pt;
+  }
+  .score .player span{
+    font-size: 45pt;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .score .best {
+    font-size: 22pt;
+  }
+  .score .best span {
+    font-size: 22pt;
+  }
+  .score .player {
+    font-size: 22pt;
+  }
+  .score .player span{
+    font-size: 22pt;
+  }
+}
+
+
+@media screen and (max-width: 966px) {
+  .score .best {
+    font-size: 22pt;
+  }
+  .score .best span {
+    font-size: 22pt;
+  }
+  .score .player {
+    font-size: 22pt;
+  }
+  .score .player span{
+    font-size: 22pt;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .score .best {
+    font-size: 22pt;
+  }
+  .score .best span {
+    font-size: 22pt;
+  }
+  .score .player {
+    font-size: 22pt;
+  }
+  .score .player span{
+    font-size: 22pt;
+  }
+}
+
+
+@media screen and (max-width: 854px) {
+  .score .best {
+    font-size: 22pt;
+  }
+  .score .best span {
+    font-size: 22pt;
+  }
+  .score .player {
+    font-size: 22pt;
+  }
+  .score .player span{
+    font-size: 22pt;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .score .best {
+    font-size: 22pt;
+  }
+  .score .best span {
+    font-size: 22pt;
+  }
+  .score .player {
+    font-size: 22pt;
+  }
+  .score .player span{
+    font-size: 22pt;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .score .best {
+    font-size: 22pt;
+  }
+  .score .best span {
+    font-size: 22pt;
+  }
+  .score .player {
+    font-size: 22pt;
+  }
+  .score .player span{
+    font-size: 22pt;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .score .best {
+    font-size: 40pt;
+  }
+  .score .best span {
+    font-size: 40pt;
+  }
+  .score .player {
+    font-size: 40pt;
+  }
+  .score .player span{
+    font-size: 40pt;
+  }
+}
+
+
+@media screen and (max-width: 540px) {
+  .score .best {
+    font-size: 28pt;
+  }
+  .score .best span {
+    font-size: 28pt;
+  }
+  .score .player {
+    font-size: 28pt;
+  }
+  .score .player span{
+    font-size: 28pt;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .score .best {
+    font-size: 26pt;
+  }
+  .score .best span {
+    font-size: 26pt;
+  }
+  .score .player {
+    font-size: 26pt;
+  }
+  .score .player span{
+    font-size: 26pt;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .score .best {
+    font-size: 24pt;
+  }
+  .score .best span {
+    font-size: 24pt;
+  }
+  .score .player {
+    font-size: 24pt;
+  }
+  .score .player span{
+    font-size: 24pt;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .score .best {
+    font-size: 23pt;
+  }
+  .score .best span {
+    font-size: 23pt;
+  }
+  .score .player {
+    font-size: 23pt;
+  }
+  .score .player span{
+    font-size: 23pt;
+  } 
+}
+
+@media screen and (max-width: 384px) {
+  .score .best {
+    font-size: 21pt;
+  }
+  .score .best span {
+    font-size: 21pt;
+  }
+  .score .player {
+    font-size: 21pt;
+  }
+  .score .player span{
+    font-size: 21pt;
+  }
+}
+
+@media screen and (max-width: 360px) {
+    .score .best {
+    font-size: 20pt;
+  }
+  .score .best span {
+    font-size: 20pt;
+  }
+  .score .player {
+    font-size: 20pt;
+  }
+  .score .player span{
+    font-size: 20pt;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .score .best {
+    font-size: 18pt;
+  }
+  .score .best span {
+    font-size: 18pt;
+  }
+  .score .player {
+    font-size: 18pt;
+  }
+  .score .player span{
+    font-size: 18pt;
+  }
+}
