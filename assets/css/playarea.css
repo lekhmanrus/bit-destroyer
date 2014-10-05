@@ -80,3 +80,267 @@ playitem .playitem-128 {
 playitem .playitem-256 {
   background-color: #D9534F;
 }
+
+@media screen and (max-width: 2560px) {
+  playfield {
+    width: 1300px;
+    height: 1300px;
+  }
+
+  playitem {
+    width: 324px;
+    height: 325px;
+    line-height: 324px;
+  }
+  playitem div {
+    font-size: 55pt;
+  }
+
+}
+
+@media screen and (max-width: 1920px) {
+  playfield {
+    width: 1000px;
+    height: 1000px;
+  }
+
+  playitem {
+    width: 249px;
+    height: 250px;
+    line-height: 249px;
+  }
+  playitem div {
+    font-size: 40pt;
+  }
+
+}
+
+
+@media screen and (max-width: 1280px) {
+  playfield {
+    width: 600px;
+    height: 600px;
+  }
+
+  playitem {
+    width: 149px;
+    height: 150px;
+    line-height: 149px;
+  }
+  playitem div {
+    font-size: 30pt;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  playfield {
+    width: 1000px;
+    height: 1000px;
+  }
+
+  playitem {
+    width: 249px;
+    height: 250px;
+    line-height: 249px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  playfield {
+    width: 432px;
+    height: 432px;
+  }
+
+  playitem {
+    width: 107px;
+    height: 108px;
+    line-height: 107px;
+  }
+}
+
+
+@media screen and (max-width: 966px) {
+  playfield {
+    width: 432px;
+    height: 432px;
+  }
+
+  playitem {
+    width: 107px;
+    height: 108px;
+    line-height: 107px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  playfield {
+    width: 432px;
+    height: 432px;
+  }
+
+  playitem {
+    width: 107px;
+    height: 108px;
+    line-height: 107px;
+  }
+}
+
+
+@media screen and (max-width: 854px) {
+  playfield {
+    width: 600px;
+    height: 600px;
+  }
+
+  playitem {
+    width: 149px;
+    height: 150px;
+    line-height: 149px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  playfield {
+    width: 600px;
+    height: 600px;
+  }
+
+  playitem {
+    width: 149px;
+    height: 150px;
+    line-height: 149px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  playfield {
+    width: 600px;
+    height: 600px;
+  }
+
+  playitem {
+    width: 149px;
+    height: 150px;
+    line-height: 149px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  playfield {
+    width: 500px;
+    height: 500px;
+  }
+
+  playitem {
+    width: 124px;
+    height: 125px;
+    line-height: 124px;
+  }
+
+  playitem div {
+    font-size: 30pt;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  playfield {
+    width: 440px;
+    height: 440px;
+  }
+
+  playitem {
+    width: 109px;
+    height: 110px;
+    line-height: 109px;
+  }
+
+  playitem div {
+    font-size: 19pt;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  playfield {
+    width: 360px;
+    height: 360px;
+  }
+
+  playitem {
+    width: 89px;
+    height: 90px;
+    line-height: 89px;
+  }
+
+  playitem div {
+    font-size: 19pt;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  playfield {
+    width: 360px;
+    height: 360px;
+  }
+
+  playitem {
+    width: 89px;
+    height: 90px;
+    line-height: 89px;
+  }
+
+  playitem div {
+    font-size: 19pt;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  playfield {
+    width: 340px;
+    height: 340px;
+  }
+
+  playitem {
+    width: 84px;
+    height: 85px;
+    line-height: 84px;
+  }
+
+  playitem div {
+    font-size: 19pt;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  playfield {
+    width: 320px;
+    height: 320px;
+  }
+
+  playitem {
+    width: 79px;
+    height: 80px;
+    line-height: 79px;
+  }
+
+  playitem div {
+    font-size: 18pt;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  playfield {
+    width: 280px;
+    height: 280px;
+  }
+
+  playitem {
+    width: 69px;
+    height: 70px;
+    line-height: 69px;
+  }
+
+  playitem div {
+    font-size: 18pt;
+  }
+}
