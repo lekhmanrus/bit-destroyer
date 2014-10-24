@@ -1,6 +1,6 @@
 ![bit-destroyer](https://raw.githubusercontent.com/lekhmanrus/bit-destroyer/master/assets/icon.png) bit-destroyer
 =============
-Logical game on phomegap for mobile.
+Logical game on phonegap for mobile.
 
 ## Dependencies
 * [ADT (Android Developer Tools) Bundle](http://developer.android.com/sdk/index.html)
