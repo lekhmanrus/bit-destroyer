@@ -2,79 +2,67 @@
 
 angular
 .module('BitDestroyerApp.services')
-.service('Timer', ['ngProgress', function(ngProgress) {
-  
-  var timer = { };
-  timer.maxTime  = 60;
-  timer.timeLeft = 60;
-  timer.timeLeftPercent = 100;
-  timer.height = '25px';
-  timer.color = '#428bca';
-  timer.colorSuccess = '#5cb85c';
-  timer.colorDanger  = '#d9534f';
-  timer.frequencyRefresh = 100;
+.service('MainMenu', [ 'Controls', 'Playfield', 'Score', 'Timer', function(Controls, Playfield, Score, Timer) {
+  var status = true,
+      resume = false;
 
-  var epsilon = 0.00000000005;
-
-  var getStep = function() {
-    return timer.frequencyRefresh / 1000;
-  };
-
-  var getPercentStep = function() {
-    return (100 / timer.maxTime) * getStep();
-  };
-
-  var cahngeColor = function(time) {
-    if(time <= 25) {
-      ngProgress.color(timer.colorDanger);
+  return {
+    open: function() {
+      Controls.setPause();
+      status = true;
+      return status;
+    },
+    close: function() {
+      Controls.unsetPause();
+      if(Controls.getMode() == 'timeTrial') {
+        Timer.start(function() {
+          if(Timer.getTimeLeft() <= 0) {
+            Controls.gameOver();
+          }
+        });
+      }
+      status = false;
+      return status;
+    },
+    getStatus: function() {
+      return status;
+    },
+    setResume: function() {
+      resume = true;
+      return resume;
+    },
+    unsetResume: function() {
+      resume = false;
+      return resume;
+    },
+    getResume: function() {
+      return resume;
+    },
+    startStandart: function() {
+      Playfield.regenerate();
+      Controls.unsetPause();
+      Controls.setMode('standart');
+      resume = true;
+      status = false;
+      Timer.hide();
+      Score.setToZero();
+    },
+    startTimeTrial: function() {
+      Playfield.regenerate();
+      Controls.setMode('timeTrial');
+      resume = true;
+      status = false;
+      Timer.show(function() {
+        Controls.unsetPause();
+      },
+      function() {
+        if(Timer.getTimeLeft() <= 0) {
+          Controls.gameOver();
+        }
+      });
+      Score.setToZero();
     }
-    else if(time >= 75) {
-      ngProgress.color(timer.colorSuccess);
-    }
-    else {
-      ngProgress.color(timer.color);
-    }
   };
 
-  var timeDesc = function(callback) {
-    if(timer.timeLeft - epsilon <= 0) {
-      return;
-    }
-    timer.timeLeft -= getStep();
-    timer.timeLeftPercent -= getPercentStep();
-    cahngeColor(timer.timeLeftPercent);
-    ngProgress.set(timer.timeLeftPercent);
-    if(callback) {
-      callback();
-    }
-    setTimeout(timeDesc, timer.frequencyRefresh, callback);
-  };
-
-  timer.getTimeLeft = function() {
-    var ret = timer.timeLeft < epsilon ? 0 : Math.ceil(timer.timeLeft);
-    return ret;
-  };
-
-  timer.addTime = function(time) {
-    timer.timeLeft += time;
-    if(timer.timeLeft > timer.maxTime) {
-      timer.timeLeftPercent = 100;
-      ngProgress.set(timer.timeLeftPercent);
-      ngProgress.color(timer.colorSuccess);
-      timer.maxTime = timer.timeLeft;
-    }
-  };
-
-  timer.init = function() {
-    ngProgress.height(timer.height);
-    ngProgress.color(timer.color);
-    ngProgress.set(timer.timeLeftPercent);
-  };
-
-  timer.start = function(callback) {
-    timeDesc(callback);
-  };
-
-  return timer;
 
 }]);

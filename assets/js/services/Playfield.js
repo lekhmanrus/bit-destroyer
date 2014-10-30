@@ -2,7 +2,8 @@
 
 angular
 .module('BitDestroyerApp.services')
-.service('Playfield', [ '$timeout', 'Playitem', function($timeout, Playitem) {
+.service('Playfield', [ '$timeout', 'Controls', 'Playitem', 'Score', function($timeout, Controls, Playitem, Score) {
+
 
   var playfield = { };
 
@@ -10,7 +11,8 @@ angular
   playfield.cols  = 4;
   playfield.field = [ ];
 
-  var items  = playfield.rows * playfield.cols;
+  var items  = playfield.rows * playfield.cols,
+      startItemsCount = items / 4;
 
   var addItem = function() {
     var index = Math.floor(Math.random() * items);
@@ -30,20 +32,65 @@ angular
     });
   };
 
-  for(var i = 0; i < items; i++) {
-    var obj = angular.copy(Playitem[0]);
-    obj.animation = 'fade-in';
-    playfield.field.push(obj);
-  }
-
-  for(var i = 0; i < items / 4; i++) {
-    if(!addItem()) {
-      i--;
+  var isNearSameItems = function() {
+    var ret = false,
+        prev;
+    for(var i = 0; i < playfield.rows; i++) {
+      prev = playfield.getItem(i, 0);
+      for(var j = 1; j < playfield.cols; j++) {
+        var cur = playfield.getItem(i, j);
+        if(prev) {
+          if(prev.type == cur.type) {
+            return true;
+          }
+          prev = cur;
+        }
+      }
     }
-  }
-  /*playfield.field[0] = angular.copy(Playitem[3]);
-  playfield.field[4] = angular.copy(Playitem[3]);
-  playfield.field[3] = angular.copy(Playitem[2]);*/
+    for(var j = 0; j < playfield.rows; j++) {
+      prev = playfield.getItem(i, 0);
+      for(var i = 1; i < playfield.cols; i++) {
+        var cur = playfield.getItem(i, j);
+        if(prev) {
+          if(prev.type == cur.type) {
+            return true;
+          }
+          prev = cur;
+        }
+      }
+    }
+    return false;
+  };
+
+  var init = function() {
+    for(var i = 0; i < items; i++) {
+      var obj = angular.copy(Playitem[0]);
+      obj.animation = 'fade-in';
+      playfield.field.push(obj);
+    }
+
+    for(var i = 0; i < startItemsCount; i++) {
+      if(!addItem()) {
+        i--;
+      }
+    }
+  };
+
+  init();
+
+  playfield.regenerate = function() {
+    for(var i = 0; i < items; i++) {
+      var obj = angular.copy(Playitem[0]);
+      obj.animation = 'fade-in';
+      playfield.field[i] = obj;
+    }
+
+    for(var i = 0; i < startItemsCount; i++) {
+      if(!addItem()) {
+        i--;
+      }
+    }
+  };
 
   playfield.getFilledItems = function() {
     return playfield.field.filter(function(e) {
@@ -68,6 +115,9 @@ angular
   };
 
   playfield.moveItems = function(direction) {
+    if(Controls.pause) {
+      return false;
+    }
     var isMove = false;
     if(direction === 'left') {
       for(var i = 0; i < playfield.rows; i++) {
@@ -84,6 +134,7 @@ angular
                 playfield.setNullItem(i, j);
                 playfield.setNullItem(i, k);
                 counter -= 2;
+                Score.addScores(item.score);
               }
               else if(j !== counter) {
                 isMove = true;
@@ -112,6 +163,7 @@ angular
                 playfield.setNullItem(i, playfield.cols - 1 - j);
                 playfield.setNullItem(i, playfield.cols - 1 - k);
                 counter -= 2;
+                Score.addScores(item.score);
               }
               else if(j !== counter) {
                 isMove = true;
@@ -140,6 +192,7 @@ angular
                 playfield.setNullItem(i, j);
                 playfield.setNullItem(k, j);
                 counter -= 2;
+                Score.addScores(item.score);
               }
               else if(i !== counter) {
                 isMove = true;
@@ -168,6 +221,7 @@ angular
                 playfield.setNullItem(playfield.rows - 1 - i, j);
                 playfield.setNullItem(playfield.rows - 1 - k, j);
                 counter -= 2;
+                Score.addScores(item.score);
               }
               else if(i !== counter) {
                 isMove = true;
@@ -186,6 +240,9 @@ angular
     }
     if(isMove && playfield.getFilledItems().length < playfield.field.length) {
       while(!addItem());
+    }
+    if(!isMove && playfield.getFilledItems().length == playfield.field.length && !isNearSameItems()) {
+      Controls.gameOver();
     }
     /*var m = '';
     for(var i in playfield.field) {

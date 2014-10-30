@@ -22,20 +22,24 @@
     
     <div class="score">
       <div class="best">Best: <span>100500</span></div>
-      <div class="player">Score: <span>0</span></div>
+      <div class="player">Score: <span ng-bind="scores"></span></div>
     </div>
 
     <menu id="controls">
-      <li><span class="glyphicon glyphicon-repeat"></span></li>
-      <li><span class="glyphicon glyphicon-align-justify"></span></li>
+      <li ng-click="restart()"><span class="glyphicon glyphicon-repeat"></span></li>
+      <li ng-click="openMenu()"><span class="glyphicon glyphicon-align-justify"></span></li>
     </menu>
 
-    <playfield></playfield>
+    <playfield ng-show="!gameOver"></playfield>
 
-    <div class="timer">
-      Time left: 
-      <span ng-bind="timeLeft"></span>
+    <div ng-show="gameOver" class="game-over {{ gameOverColor }}">
+      <p>
+        Game over...
+        <span ng-click="restart()">Try again?</span>
+      </p>
     </div>
+    
+    <timer></timer>
 
   </body>
 </html>

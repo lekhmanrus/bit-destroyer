@@ -16,6 +16,10 @@ angular.module('BitDestroyerApp', [
 
 .run(['Playfield', 'hotkeys', function(Playfield, hotkeys) {
 
+  window.addEventListener('load', function() {
+      FastClick.attach(document.body);
+  }, false);
+
   hotkeys.add({
     combo: 'left',
     callback: function() {

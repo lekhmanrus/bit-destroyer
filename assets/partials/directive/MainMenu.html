@@ -1,7 +1,16 @@
-<div class="logo"></div>
-Destroyer
-<hr />
-<div id="buttons">
-  <div><a href="">lalal</a></div>
-  <div><a href="">lalal2</a></div>
+<div ng-show="showMenu">
+  <div class="resume" ng-show="showResume" ng-click="menu.close()">
+    <span class="large glyphicon glyphicon-remove"></span>
+  </div>
+  <div class="logo"></div>
+  Destroyer
+  <hr />
+  <div class="items">
+    <div ng-click="menu.startStandart()" class="item">
+      <span>Standart</span>
+    </div>
+    <div ng-click="menu.startTimeTrial()" class="item">
+      <span>Time trial</span>
+    </div>
+  </div>
 </div>
