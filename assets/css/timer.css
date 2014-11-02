@@ -5,6 +5,38 @@
   width:    175px;
 }
 
+timer .freeze-time {
+  position: absolute;
+  width: 408px;
+  height: 408px;
+  margin: 0px auto;
+  font-size: 251pt;
+  top: 50%;
+  margin-top: -204px;
+  color: #EEEEEE;
+}
+
+timer .freeze-time-3 {
+  background-color: #D9534F;
+  left: 0%;
+}
+
+timer .freeze-time-2 {
+  background-color: #F0AD4E;
+  left: 33%;
+}
+
+timer .freeze-time-1 {
+  background-color: #5CB85C;
+  left: 66%;
+}
+
+timer .freeze-time-0 {
+  top: 21%;
+  color: #555555;
+  font-size: 365pt;
+}
+
 #ngProgress-container {
   top:    auto;
   bottom: 0px;

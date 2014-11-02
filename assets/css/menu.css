@@ -1,0 +1,51 @@
+main-menu > div {
+  position: fixed;
+  display: block; 
+  top:     0px;
+  bottom:  0px;
+  left:    0px;
+  right:   0px;
+  z-index: 999999999;
+  background-color: rgba(255, 255, 255, 0.87);
+  color: #555555;
+  font-size: 70pt;
+  line-height: 70pt;
+  margin: 0px auto;
+  padding-top: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+main-menu > div .logo {
+  background-image: url(../images/logo.png);
+  background-size: 96px;
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+  padding-top: 20px;
+}
+
+main-menu > div .resume {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  cursor: pointer;
+}
+
+main-menu > div .resume .large {
+  font-size: 45pt;
+}
+
+main-menu > div .item {
+  padding-top: 25px;
+}
+
+main-menu > div .item span {
+  color: #555555;
+  border-bottom: 5px dashed #D9534F;
+  cursor: pointer;
+}
+
+main-menu > div .item span:hover {
+  border-bottom: 0px;
+}

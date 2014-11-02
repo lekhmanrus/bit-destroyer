@@ -2,24 +2,48 @@
 
 angular
 .module('BitDestroyerApp.controllers')
-.controller('MainCtrl', [ '$scope', 'Timer', function($scope, Timer) {
+.controller('MainCtrl', [ '$scope', 'Controls', 'MainMenu', 'Playfield', 'Score', 'Timer', function($scope, Controls, MainMenu, Playfield, Score, Timer) {
 
-  Timer.init();
+  var colorClasses = [
+    'gray',
+    'brown',
+    'violet',
+    'blue',
+    'cyan',
+    'green',
+    'yellow',
+    'red'
+  ];
 
-  $scope.timeLeft = Timer.timeLeft;
+  $scope.scores = 0;
+  Controls.setGameOverCallback(function(isGameOver) {
+    $scope.gameOver = isGameOver;
+    $scope.gameOverColor = colorClasses[Math.floor(Math.random() * colorClasses.length)];
+  });
 
-  $scope.start = function() {
-    //Timer.addTime(10);
-    Timer.start(function() {
-      $scope.timeLeft = Timer.getTimeLeft();
-      if($scope.timeLeft <= 0) {
-        console.log('Game over!');
-      }
-    });
+  $scope.restart = function() {
+    Playfield.regenerate();
+    Score.setToZero();
+    Controls.newGame();
+    if(Controls.getMode() == 'timeTrial') {
+      Controls.setPause();
+      Timer.show(function() {
+        Controls.unsetPause();
+      },
+      function() {
+        if(Timer.getTimeLeft() <= 0) {
+          Controls.gameOver();
+        }
+      });
+    }
   };
 
-  $scope.addTime = function() {
-    Timer.addTime(20);
-  };
+  Score.setCallback(function(score) {
+    $scope.scores = score;
+  });
 
+  $scope.openMenu = function() {
+    MainMenu.open();
+  };
+   
 }]);

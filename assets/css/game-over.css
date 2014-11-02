@@ -1,0 +1,52 @@
+.game-over {
+  width: 408px;
+  height: 408px;
+  margin: 0px auto;
+  padding: 0px;
+  background-color: #555555;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+.game-over p {
+  position: relative;
+  top: 25%;
+  font-size: 45pt;
+}
+
+.game-over span {
+  border-bottom: 3px dashed #EEEEEE;
+  cursor: pointer;
+}
+
+.game-over.gray {
+  background-color: #777777;
+}
+
+.game-over.brown {
+  background-color: #7A5230;
+}
+
+.game-over.violet {
+  background-color: #6F5499;
+}
+
+.game-over.blue {
+  background-color: #428BCA;
+}
+
+.game-over.cyan {
+  background-color: #5BC0DE;
+}
+
+.game-over.green {
+  background-color: #5CB85C;
+}
+
+.game-over.yellow {
+  background-color: #F0AD4E;
+}
+
+.game-over.red {
+  background-color: #D9534F;
+}
