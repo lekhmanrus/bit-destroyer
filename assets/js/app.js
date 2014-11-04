@@ -10,8 +10,7 @@ angular.module('BitDestroyerApp', [
   'BitDestroyerApp.services',
   'BitDestroyerApp.filters',
   'cfp.hotkeys',
-  'ngProgress',
-  'ngTouch'
+  'ngProgress'
 ])
 
 .run(['Playfield', 'hotkeys', function(Playfield, hotkeys) {

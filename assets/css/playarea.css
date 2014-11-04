@@ -1,45 +1,18 @@
 playfield {
   width: 408px;
   height: 408px;
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -o-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: space-around;
-  -moz-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  display: block;
 }
 
 playitem {
   width: 100px;
   height: 100px;
-  margin: 0px;
+  margin: 1px;
   padding: 0px;
   background-color: #EEEEEE;
-  border-collapse: 
-  -webkit-flex-shrink: 0;
-  -moz-flex-shrink: 0;
-  -o-flex-shrink: 0;
-  -ms-flex-shrink: 0;
-  flex-shrink: 0;
-  -webkit-flex-grow: 0;
-  -moz-flex-grow: 0;
-  -o-flex-grow: 0;
-  -ms-flex-grow: 0;
-  flex-grow: 0;
+  float: left;
   line-height: 100px;
   text-align: center;
   color: #EEEEEE;
@@ -88,9 +61,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 299px;
+    width: 298px;
     height: 300px;
-    line-height: 299px;
+    line-height: 298px;
   }
   playitem div {
     font-size: 55pt;
@@ -105,9 +78,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 324px;
+    width: 323px;
     height: 325px;
-    line-height: 324px;
+    line-height: 323px;
   }
   playitem div {
     font-size: 55pt;
@@ -122,9 +95,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 212px;
+    width: 211px;
     height: 213px;
-    line-height: 212px;
+    line-height: 211px;
   }
   playitem div {
     font-size: 55pt;
@@ -138,9 +111,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 274px;
+    width: 273px;
     height: 275px;
-    line-height: 274px;
+    line-height: 273px;
   }
   playitem div {
     font-size: 55pt;
@@ -154,9 +127,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 199px;
+    width: 198px;
     height: 200px;
-    line-height: 199px;
+    line-height: 198px;
   }
   playitem div {
     font-size: 55pt;
@@ -170,9 +143,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 224px;
+    width: 223px;
     height: 225px;
-    line-height: 224px;
+    line-height: 223px;
   }
   playitem div {
     font-size: 55pt;
@@ -186,9 +159,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 149px;
+    width: 148px;
     height: 150px;
-    line-height: 149px;
+    line-height: 148px;
   }
   playitem div {
     font-size: 35pt;
@@ -203,9 +176,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 184px;
+    width: 183px;
     height: 185px;
-    line-height: 184px;
+    line-height: 183px;
   }
   playitem div {
     font-size: 35pt;
@@ -220,9 +193,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 134px;
+    width: 133px;
     height: 135px;
-    line-height: 134px;
+    line-height: 133px;
   }
   playitem div {
     font-size: 35pt;
@@ -237,9 +210,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 169px;
+    width: 168px;
     height: 170px;
-    line-height: 169px;
+    line-height: 168px;
   }
   playitem div {
     font-size: 35pt;
@@ -253,9 +226,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 114px;
+    width: 113px;
     height: 115px;
-    line-height: 114px;
+    line-height: 113px;
   }
   playitem div {
     font-size: 35pt;
@@ -270,9 +243,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 144px;
+    width: 143px;
     height: 145px;
-    line-height: 144px;
+    line-height: 143px;
   }
   playitem div {
     font-size: 35pt;
@@ -287,9 +260,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 144px;
+    width: 143px;
     height: 145px;
-    line-height: 144px;
+    line-height: 143px;
   }
   playitem div {
     font-size: 35pt;
@@ -304,9 +277,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 184px;
+    width: 183px;
     height: 185px;
-    line-height: 184px;
+    line-height: 183px;
   }
   playitem div {
     font-size: 35pt;
@@ -320,9 +293,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 119px;
+    width: 118px;
     height: 120px;
-    line-height: 119px;
+    line-height: 118px;
   }
   playitem div {
     font-size: 25pt;
@@ -337,9 +310,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 149px;
+    width: 148px;
     height: 150px;
-    line-height: 149px;
+    line-height: 148px;
   }
   playitem div {
     font-size: 35pt;
@@ -353,9 +326,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 94px;
+    width: 93px;
     height: 95px;
-    line-height: 94px;
+    line-height: 93px;
   }
   playitem div {
     font-size: 25pt;
@@ -370,9 +343,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 124px;
+    width: 123px;
     height: 125px;
-    line-height: 124px;
+    line-height: 123px;
   }
   playitem div {
     font-size: 35pt;
@@ -386,9 +359,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 109px;
+    width: 108px;
     height: 110px;
-    line-height: 109px;
+    line-height: 108px;
   }
   playitem div {
     font-size: 25pt;
@@ -403,9 +376,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 134px;
+    width: 133px;
     height: 135px;
-    line-height: 134px;
+    line-height: 133px;
   }
   playitem div {
     font-size: 35pt;
@@ -419,9 +392,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 84px;
+    width: 83px;
     height: 85px;
-    line-height: 84px;
+    line-height: 83px;
   }
   playitem div {
     font-size: 25pt;
@@ -436,9 +409,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 114px;
+    width: 113px;
     height: 115px;
-    line-height: 114px;
+    line-height: 113px;
   }
   playitem div {
     font-size: 35pt;
@@ -452,9 +425,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 49px;
+    width: 48px;
     height: 50px;
-    line-height: 49px;
+    line-height: 48px;
   }
   playitem div {
     font-size: 15pt;
@@ -468,9 +441,9 @@ playitem .playitem-256 {
   }
 
   playitem {
-    width: 74px;
+    width: 73px;
     height: 75px;
-    line-height: 74px;
+    line-height: 73px;
   }
   playitem div {
     font-size: 15pt;
