@@ -18,8 +18,24 @@ playitem {
   color: #EEEEEE;
 }
 
+playitem .square {
+  border-radius: 0px;
+  -webkit-transform: rotate(0) scale(1);
+}
+
+playitem .circle {
+  border-radius: 50px;
+  -webkit-transform: rotate(0) scale(1);
+}
+
+playitem .rhombus {
+  border-radius: 0px;
+  -webkit-transform: rotate(-45deg) scale(0.7);
+}
+
 playitem div {
   font-family: 'Audiowide';
+  -webkit-transition: border-radius ease-in-out 1s;
 }
 
 playitem .playitem-2 {

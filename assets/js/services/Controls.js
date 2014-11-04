@@ -8,8 +8,18 @@ angular
   controls.pause = true;
   controls.mode  = undefined;
   controls.gameOverFlag = false;
+  controls.toCircle = 5000;
+  controls.toRhombus = 10000;
 
   var callback = undefined;
+
+  controls.getScoreToCircle = function() {
+    return controls.toCircle;
+  };
+
+  controls.getScoreToRhombus = function() {
+    return controls.toRhombus;
+  };
 
   controls.setPause = function() {
     controls.pause = true;
