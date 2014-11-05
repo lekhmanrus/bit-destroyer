@@ -29,7 +29,6 @@
     "angular-hotkeys": "chieffancypants/angular-hotkeys#~1.4.3",
     "angular-touch": "latest",
     "bootstrap": "latest",
-    "fastclick": "latest",
     "jquery": "~2.1.1",
     "ngprogress": "~1.0.6",
     "normalize.css": "latest"
