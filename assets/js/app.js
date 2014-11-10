@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('BitDestroyerApp.controllers', []);
-angular.module('BitDestroyerApp.directives', []);
-angular.module('BitDestroyerApp.services', []);
+angular.module('BitDestroyerApp.controllers', [ 'ngTouch' ]);
+angular.module('BitDestroyerApp.directives', [ 'ngTouch' ]);
+angular.module('BitDestroyerApp.services', [ 'ngTouch' ]);
 
 angular.module('BitDestroyerApp', [
   'BitDestroyerApp.controllers',
@@ -10,14 +10,15 @@ angular.module('BitDestroyerApp', [
   'BitDestroyerApp.services',
   'BitDestroyerApp.filters',
   'cfp.hotkeys',
-  'ngProgress'
+  'ngProgress',
+  'ngTouch'
 ])
 
 .run(['Playfield', 'hotkeys', function(Playfield, hotkeys) {
 
-  window.addEventListener('load', function() {
+/*  window.addEventListener('load', function() {
       FastClick.attach(document.body);
-  }, false);
+  }, false);*/
 
   hotkeys.add({
     combo: 'left',

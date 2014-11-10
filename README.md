@@ -17,3 +17,5 @@ Logical game on phomegap for mobile.
 * Use
     * `grunt` for development and wathing results (HTML-file `out/www/index.html`)
     * `grunt run` for running debug version of app in your Android device
+
+[ ![Codeship Status for wishmaster2016/bit-destroyer](https://codeship.com/projects/68b8af50-4acc-0132-b3d9-62227a079ece/status)](https://codeship.com/projects/46449)
