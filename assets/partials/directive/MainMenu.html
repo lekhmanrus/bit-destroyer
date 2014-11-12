@@ -1,15 +1,15 @@
 <div ng-show="showMenu">
-  <div class="resume" ng-show="showResume" ng-click="menu.close()">
+  <div class="resume" ng-show="showResume" ng-tap="menu.close()">
     <span class="large glyphicon glyphicon-remove"></span>
   </div>
   <div class="logo"></div>
   Destroyer
   <hr />
   <div class="items">
-    <div ng-click="menu.startStandart()" class="item">
+    <div ng-tap="menu.startStandart()" class="item">
       <span>Standart</span>
     </div>
-    <div ng-click="menu.startTimeTrial()" class="item">
+    <div ng-tap="menu.startTimeTrial()" class="item">
       <span>Time trial</span>
     </div>
   </div>

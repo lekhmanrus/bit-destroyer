@@ -26,8 +26,8 @@
     </div>
 
     <menu id="controls">
-      <li ng-click="restart()"><span class="glyphicon glyphicon-repeat"></span></li>
-      <li ng-click="openMenu()"><span class="glyphicon glyphicon-align-justify"></span></li>
+      <li ng-tap="restart()"><span class="glyphicon glyphicon-repeat"></span></li>
+      <li ng-tap="openMenu()"><span class="glyphicon glyphicon-align-justify"></span></li>
     </menu>
 
     <playfield ng-show="!gameOver"></playfield>
@@ -35,7 +35,7 @@
     <div ng-show="gameOver" class="game-over {{ gameOverColor }}">
       <p>
         Game over...
-        <span ng-click="restart()">Try again?</span>
+        <span ng-tap="restart()">Try again?</span>
       </p>
     </div>
     
