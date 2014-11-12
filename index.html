@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BitDestroyerApp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Bit Destroyer</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-hotkeys/build/hotkeys.min.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/ngprogress/ngProgress.css" />
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+    <link type="text/css" rel="stylesheet" href="css/animation.css" />
+    <link type="text/css" rel="stylesheet" href="css/basic.css" />
+    <link type="text/css" rel="stylesheet" href="css/fonts.css" />
+    <link type="text/css" rel="stylesheet" href="css/game-over.css" />
+    <link type="text/css" rel="stylesheet" href="css/menu.css" />
+    <link type="text/css" rel="stylesheet" href="css/playarea.css" />
+    <link type="text/css" rel="stylesheet" href="css/timer.css" />
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-hotkeys/build/hotkeys.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/ngprogress/build/ngProgress.js"></script>
+    <!-- endbower -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/filters.js"></script>
+    <script type="text/javascript" src="js/controllers/Main.js"></script>
+    <script type="text/javascript" src="js/services/Controls.js"></script>
+    <script type="text/javascript" src="js/services/MainMenu.js"></script>
+    <script type="text/javascript" src="js/services/Playfield.js"></script>
+    <script type="text/javascript" src="js/services/Playitem.js"></script>
+    <script type="text/javascript" src="js/services/Score.js"></script>
+    <script type="text/javascript" src="js/services/Timer.js"></script>
+    <script type="text/javascript" src="js/services/TimerSettings.js"></script>
+    <script type="text/javascript" src="js/directives/MainMenu.js"></script>
+    <script type="text/javascript" src="js/directives/NgClick.js"></script>
+    <script type="text/javascript" src="js/directives/Playfield.js"></script>
+    <script type="text/javascript" src="js/directives/Playitem.js"></script>
+    <script type="text/javascript" src="js/directives/Timer.js"></script>
+    <script type="text/javascript" src="js/directives/ngTouch.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+
+    <main-menu></main-menu>
+
+    <div class="score">
+        <div class="best">Best: <span>100500</span>
+        </div>
+        <div class="player">Score: <span ng-bind="scores"></span>
+        </div>
+    </div>
+
+    <menu id="controls">
+        <li ng-tap="restart()"><span class="glyphicon glyphicon-repeat"></span>
+        </li>
+        <li ng-tap="openMenu()"><span class="glyphicon glyphicon-align-justify"></span>
+        </li>
+    </menu>
+
+    <playfield ng-show="!gameOver"></playfield>
+
+    <div ng-show="gameOver" class="game-over {{ gameOverColor }}">
+        <p>
+            Game over...
+            <span ng-tap="restart()">Try again?</span>
+        </p>
+    </div>
+
+    <timer></timer>
+
+</body>
+
+</html>
