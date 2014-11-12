@@ -16,6 +16,7 @@ angular
   ];
 
   $scope.scores = 0;
+  $scope.best = Score.getBestScores();
   Controls.setGameOverCallback(function(isGameOver) {
     $scope.gameOver = isGameOver;
     $scope.gameOverColor = colorClasses[Math.floor(Math.random() * colorClasses.length)];
@@ -40,6 +41,10 @@ angular
 
   Score.setCallback(function(score) {
     $scope.scores = score;
+  });
+
+  Score.setBestScoreCallback(function(best) {
+    $scope.best = best;
   });
 
   $scope.openMenu = function() {

@@ -14,7 +14,17 @@ angular.module('BitDestroyerApp', [
   'ngTouch'
 ])
 
-.run(['Playfield', 'hotkeys', function(Playfield, hotkeys) {
+.run(['MainMenu', 'Playfield', 'hotkeys', function(MainMenu, Playfield, hotkeys) {
+
+  document.addEventListener("backbutton", function(e) {
+    if(MainMenu.getStatus()) {
+      e.preventDefault();
+      navigator.app.exitApp();
+    }
+    else {
+      MainMenu.open();
+    }
+  }, false);
 
   hotkeys.add({
     combo: 'left',
