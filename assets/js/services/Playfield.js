@@ -2,7 +2,7 @@
 
 angular
 .module('BitDestroyerApp.services')
-.service('Playfield', [ '$timeout', 'Controls', 'Playitem', 'Score', function($timeout, Controls, Playitem, Score) {
+.service('Playfield', [ '$timeout', 'Controls', 'Playitem', 'Score', 'Timer', function($timeout, Controls, Playitem, Score, Timer) {
 
 
   var playfield = { };
@@ -29,6 +29,12 @@ angular
   var setDefaultAnimation = function() {
     playfield.field.forEach(function(e) {
       e.animation = 'fade-in';
+    });
+  };
+
+  var changeItemsForm = function(form) {
+    playfield.field.forEach(function(e) {
+      e.form = form;
     });
   };
 
@@ -135,6 +141,7 @@ angular
                 playfield.setNullItem(i, k);
                 counter -= 2;
                 Score.addScores(item.score);
+                Timer.addTime(item.time);
               }
               else if(j !== counter) {
                 isMove = true;
@@ -164,6 +171,7 @@ angular
                 playfield.setNullItem(i, playfield.cols - 1 - k);
                 counter -= 2;
                 Score.addScores(item.score);
+                Timer.addTime(item.time);
               }
               else if(j !== counter) {
                 isMove = true;
@@ -193,6 +201,7 @@ angular
                 playfield.setNullItem(k, j);
                 counter -= 2;
                 Score.addScores(item.score);
+                Timer.addTime(item.time);
               }
               else if(i !== counter) {
                 isMove = true;
@@ -222,6 +231,7 @@ angular
                 playfield.setNullItem(playfield.rows - 1 - k, j);
                 counter -= 2;
                 Score.addScores(item.score);
+                Timer.addTime(item.time);
               }
               else if(i !== counter) {
                 isMove = true;
@@ -253,6 +263,12 @@ angular
       m += playfield.field[i].score + '  ';
     }
     console.log(m);*/
+    if(Score.getScores() >= Controls.getScoreToCircle() && Score.getScores() < Controls.getScoreToRhombus()) {
+      changeItemsForm('circle');
+    }
+    else if(Score.getScores() >= Controls.getScoreToRhombus()) {
+      changeItemsForm('rhombus');
+    }
     $timeout(angular.noop);
   };
 
