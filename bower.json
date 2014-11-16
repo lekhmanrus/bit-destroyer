@@ -30,7 +30,6 @@
     "bootstrap": "latest",
     "angular-touch": "latest",
     "jquery": "~2.1.1",
-    "ngprogress": "~1.0.6",
-    "normalize.css": "latest"
+    "ngprogress": "~1.0.6"
   }
 }

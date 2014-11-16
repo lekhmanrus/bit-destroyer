@@ -31,42 +31,6 @@ module.exports = function(grunt) {
     require('child_process').exec('phonegap create out -n BitDestroyer -i org.game4l.bitdestroyer', puts);
   });
 
-  grunt.registerTask('plugin-install', 'install phonegap plugins', function() {
-    var done = this.async();
-    done();
-    /*require('child_process').exec('phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device-motion.git', {cwd: './TaxiPILOT'}, function(error, stdout, stderr) {
-          console.log(stdout);
-          console.log(stderr);
-          if(error)
-            console.log('exec error: ' + error);
-          
-          require('child_process').exec('phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device-orientation.git', {cwd: './TaxiPILOT'}, function(error, stdout, stderr) {
-            console.log(stdout);
-            console.log(stderr);
-            if(error)
-              console.log('exec error: ' + error);
-            
-            require('child_process').exec('phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-geolocation.git', {cwd: './TaxiPILOT'}, function(error, stdout, stderr) {
-              console.log(stdout);
-              console.log(stderr);
-              if(error)
-                console.log('exec error: ' + error);
-              
-              require('child_process').exec('phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git', {cwd: './TaxiPILOT'}, function(error, stdout, stderr) {
-                console.log(stdout);
-                console.log(stderr);
-                if(error)
-                  console.log('exec error: ' + error);
-                done();
-              });
-              
-            });
-
-          });
-
-        });*/
-  });
-
   grunt.registerTask('run-android', 'run phonegap for android device', function() {
     var done = this.async();
     require('child_process').exec('phonegap run android', {cwd: './out'}, function(error, stdout, stderr) {
@@ -146,6 +110,14 @@ module.exports = function(grunt) {
       tasks: [ 'make' ]
     }
   });
+
+  grunt.config.set('download', {
+    crosswalk: {
+      url: 'https://download.01.org/crosswalk/releases/crosswalk/android/stable/8.37.189.14/crosswalk-8.37.189.14.zip',
+      manifest: false,
+      filename: 'out/'
+    }
+  });
   
   grunt.registerTask('make', [
     'clean',
@@ -157,7 +129,6 @@ module.exports = function(grunt) {
   grunt.registerTask('install', [
     'bower-install',
     'create',
-    'plugin-install',
     'make'
   ]);
 
@@ -169,6 +140,10 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'make',
     'watch'
+  ]);
+
+  grunt.registerTask('test', [
+    'download'
   ]);
 
 };
