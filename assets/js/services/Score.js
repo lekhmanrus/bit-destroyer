@@ -4,17 +4,23 @@ angular
 .module('BitDestroyerApp.services')
 .service('Score', [ function() {
 
-  var score    = 0,
-      best     = localStorage.getItem("bestScore") ? localStorage.getItem("bestScore") : 0,
-      callback = undefined,
-      bscallback = undefined;
+  var score = 0,
+      best  = 0,
+      callback   = undefined,
+      bscallback = undefined,
+      mode = undefined;
 
   return {
     addScores: function(scores) {
       score += +scores;
       if(score > best) {
         best = score;
-        localStorage.setItem("bestScore", best);
+        if(mode == 'standart') {
+          localStorage.setItem("bestStandart", best);
+        }
+        else if(mode == 'timeTrial') {
+          localStorage.setItem("bestTimeTrial", best);
+        }
       }
       if(callback) {
         callback(score);
@@ -27,8 +33,20 @@ angular
     getScores: function() {
       return score;
     },
-    setBestScores: function(bestScores) {
-      best = bestScores
+    loadBestScore: function(m) {
+      if(m == 'standart') {
+        best = localStorage.getItem("bestStandart") ? localStorage.getItem("bestStandart") : 0;
+      }
+      else if(m == 'timeTrial') {
+        best = localStorage.getItem("bestTimeTrial") ? localStorage.getItem("bestTimeTrial") : 0;
+      }
+      else {
+        best = 0;
+      }
+      if(bscallback) {
+        bscallback(best);
+      }
+      mode = m;
       return best;
     },
     getBestScores: function() {

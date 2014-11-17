@@ -1,0 +1,13 @@
+{
+  "name": "BitDestroyer",
+  "description": "Logical game on phomegap for mobile.",
+  "version": "0.0.1",
+  "app": {
+    "launch":{
+      "local_path": "index.html"
+    }
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}

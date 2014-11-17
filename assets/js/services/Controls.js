@@ -2,7 +2,7 @@
 
 angular
 .module('BitDestroyerApp.services')
-.service('Controls', [ function() {
+.service('Controls', [ 'Score', function(Score) {
 
   var controls = { };
   controls.pause = true;
@@ -37,6 +37,7 @@ angular
 
   controls.setMode = function(mode) {
     controls.mode = mode;
+    Score.loadBestScore(mode);
     return controls.mode;
   };
 

@@ -111,14 +111,28 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.config.set('download', {
+  grunt.config.set('curl', {
     crosswalk: {
-      url: 'https://download.01.org/crosswalk/releases/crosswalk/android/stable/8.37.189.14/crosswalk-8.37.189.14.zip',
-      manifest: false,
-      filename: 'out/'
+      src: 'https://download.01.org/crosswalk/releases/crosswalk/android/stable/8.37.189.14/crosswalk-8.37.189.14.zip',
+      dest: 'cache/crosswalk-8.37.189.14.zip'
     }
   });
-  
+
+  grunt.config.set('unzip', {
+    crosswalk: {
+      router: function (filepath) {
+        // Route each file to dist/{{filename}}
+        var path = require('path');
+        var filename = path.basename(filepath);
+        return 'crosswalk-8.37.189.14/' + filename;
+      },
+      /*src: 'cache/crosswalk-8.37.189.14.zip',
+      dest: 'cache/crosswalk-8.37.189.14'*/
+      src: 'cache/crosswalk-8.37.189.14.zip',
+      dest: 'cache/'
+    }
+  });
+
   grunt.registerTask('make', [
     'clean',
     'copy',
@@ -137,13 +151,13 @@ module.exports = function(grunt) {
     'run-android'
   ]);
 
+  grunt.registerTask('crosswalk', [
+    'unzip'
+  ]);
+
   grunt.registerTask('default', [
     'make',
     'watch'
-  ]);
-
-  grunt.registerTask('test', [
-    'download'
   ]);
 
 };
