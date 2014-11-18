@@ -2,16 +2,28 @@
   font-family: 'Architects Daughter';
   font-style: normal;
   font-weight: 400;
+  src: url(../fonts/ArchitectsDaughter.eot);
   src: local('Architects Daughter'),
        local('ArchitectsDaughter'),
-       url(../fonts/ArchitectsDaughter.woff) format('woff');
+       url(../fonts/ArchitectsDaughter.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/ArchitectsDaughter.woff2) format('woff2'),
+       url(../fonts/ArchitectsDaughter.woff) format('woff'),
+       url(../fonts/ArchitectsDaughter.ttf)  format('truetype'),
+       url(../fonts/ArchitectsDaughter.svg#ArchitectsDaughter) format('svg'),
+       url(../fonts/ArchitectsDaughter.etf);
 }
 
 @font-face {
   font-family: 'Audiowide';
   font-style: normal;
   font-weight: 400;
-  src: local('Audiowide'),
+  src: url(../fonts/Audiowide-Regular.eot);
+  src: local('Architects Daughter'),
        local('Audiowide-Regular'),
-       url(../fonts/Audiowide-Regular.woff) format('woff');
+       url(../fonts/Audiowide-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Audiowide-Regular.woff2) format('woff2'),
+       url(../fonts/Audiowide-Regular.woff) format('woff'),
+       url(../fonts/Audiowide-Regular.ttf)  format('truetype'),
+       url(../fonts/Audiowide-Regular.svg#Audiowide-Regular) format('svg'),
+       url(../fonts/Audiowide-Regular.etf);
 }
