@@ -70,7 +70,8 @@ module.exports = function(grunt) {
     });
 
     unzipper.on('extract', function (log) {
-        console.log('Finished extracting');
+      done();
+      console.log('Finished extracting');
     });
 
     unzipper.extract({
@@ -79,7 +80,6 @@ module.exports = function(grunt) {
             return file.type !== "SymbolicLink";
         }
     });
-    //done();
   });
 
   grunt.config.set('clean', {

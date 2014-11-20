@@ -37,7 +37,6 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "decompress": "^2.1.1",
     "decompress-zip": "0.0.8",
     "grunt": "~0.4.5",
     "grunt-contrib-clean": "~0.6.0",
@@ -47,7 +46,6 @@
     "grunt-html-build": "~0.3.2",
     "grunt-wiredep": "~1.8.0",
     "load-grunt-tasks": "~0.6.0",
-    "node-zip": "^1.1.0",
     "phonegap": "*"
   },
   "devDependencies": {}
