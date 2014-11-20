@@ -107,6 +107,27 @@ timer .freeze-time-0 {
 
 }
 
+@media screen and (max-width: 1600px) and (max-height: 2560px) {
+
+  timer .freeze-time {
+    width: 543px;
+    height: 543px;
+    font-size: 300pt;
+    margin-top: -504px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 470pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 560px;
+    font-size: 60pt;
+  }
+
+}
+
 @media screen and (max-width: 1366px) and (max-height: 768px) {
 
   timer .freeze-time {
