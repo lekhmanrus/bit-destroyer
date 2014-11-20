@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="org.game4l.bitdestroyer" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>BitDestroyer</name>
+    <name>Bit Destroyer</name>
     <description>
-        Logical game on phomegap for mobile.
+        Logical game on phonegap for mobile.
     </description>
     <author email="lekhman-ruslan@i.ua" href="http://lekhmanrus.16mb.com/">
         Ruslan Lekhman

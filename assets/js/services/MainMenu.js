@@ -41,6 +41,7 @@ angular
     startStandart: function() {
       Playfield.regenerate();
       Controls.unsetPause();
+      Controls.newGame();
       Controls.setMode('standart');
       resume = true;
       status = false;
@@ -49,6 +50,7 @@ angular
     },
     startTimeTrial: function() {
       Playfield.regenerate();
+      Controls.newGame();
       Controls.setMode('timeTrial');
       resume = true;
       status = false;

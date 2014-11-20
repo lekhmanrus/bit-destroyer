@@ -2,6 +2,8 @@
  
 module.exports = function(grunt) {
 
+  var crosswalkVersion = '8.37.189.14';
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json')
   });
@@ -39,6 +41,44 @@ module.exports = function(grunt) {
       if(error)
         console.log('exec error: ' + error);
       done();
+    });
+  });
+
+  grunt.registerTask('crosswalk', 'make crosswalk .apk', function() {
+    var done = this.async();
+    require('child_process')
+    .exec(
+      'python make_apk.py --package=org.game4l.bitdestroyer --manifest=../www/manifest.json',
+      { cwd: './out/crosswalk-' + crosswalkVersion },
+      function(error, stdout, stderr) {
+        console.log(stdout);
+        console.log(stderr);
+        if(error)
+          console.log('exec error: ' + error);
+        done();
+      }
+    );
+  });
+
+  grunt.registerTask('unzip', 'unzipping crosswalk', function() {
+    var done = this.async();
+    var DecompressZip = require('decompress-zip'),
+        unzipper = new DecompressZip('cache/crosswalk-' + crosswalkVersion + '.zip');
+
+    unzipper.on('error', function (err) {
+        console.log('Caught an error');
+    });
+
+    unzipper.on('extract', function (log) {
+      done();
+      console.log('Finished extracting');
+    });
+
+    unzipper.extract({
+        path: 'out',
+        filter: function (file) {
+            return file.type !== "SymbolicLink";
+        }
     });
   });
 
@@ -113,23 +153,8 @@ module.exports = function(grunt) {
 
   grunt.config.set('curl', {
     crosswalk: {
-      src: 'https://download.01.org/crosswalk/releases/crosswalk/android/stable/8.37.189.14/crosswalk-8.37.189.14.zip',
-      dest: 'cache/crosswalk-8.37.189.14.zip'
-    }
-  });
-
-  grunt.config.set('unzip', {
-    crosswalk: {
-      router: function (filepath) {
-        // Route each file to dist/{{filename}}
-        var path = require('path');
-        var filename = path.basename(filepath);
-        return 'crosswalk-8.37.189.14/' + filename;
-      },
-      /*src: 'cache/crosswalk-8.37.189.14.zip',
-      dest: 'cache/crosswalk-8.37.189.14'*/
-      src: 'cache/crosswalk-8.37.189.14.zip',
-      dest: 'cache/'
+      src: 'https://download.01.org/crosswalk/releases/crosswalk/android/stable/' + crosswalkVersion + '/crosswalk-' + crosswalkVersion + '.zip',
+      dest: 'cache/crosswalk-' + crosswalkVersion + '.zip'
     }
   });
 
@@ -151,8 +176,10 @@ module.exports = function(grunt) {
     'run-android'
   ]);
 
-  grunt.registerTask('crosswalk', [
-    'unzip'
+  grunt.registerTask('build', [
+    'make',
+    'unzip',
+    'crosswalk'
   ]);
 
   grunt.registerTask('default', [
