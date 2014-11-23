@@ -1,6 +1,6 @@
 ![bit-destroyer](https://raw.githubusercontent.com/lekhmanrus/bit-destroyer/master/assets/icon.png) bit-destroyer
 =============
-Logical game on phonegap for mobile.
+Logical game on phonegap | crosswalk for mobile.
 
 ## Dependencies
 * [ADT (Android Developer Tools) Bundle](http://developer.android.com/sdk/index.html)
@@ -16,6 +16,7 @@ Logical game on phonegap for mobile.
 * Install npm modules `npm install`
 * Build project `grunt install`
 * Use
-    * `grunt` for development and wathing results (HTML-file `out/www/index.html`)
+    * `grunt` for development and watching results (HTML-file `out/www/index.html`)
     * `grunt run` for running debug version of app in your Android (Phonegap)
-    * `grunt curl` and `grunt buil` for make *.apk (Crosswalk)
+    * `grunt curl` and `grunt build` for make *.apk (Crosswalk)
+    * `phonegap` commands in `out` directory
