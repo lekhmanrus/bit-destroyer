@@ -44,532 +44,27 @@ timer .freeze-time-0 {
   background-color: #EEEEEE;
 }
 
-@media screen and (max-width: 2560px) and (max-height: 1600px) {
+@media screen and (min-width: 320px) and (min-height: 480px) {
 
   timer .freeze-time {
-    width: 870px;
-    height: 870px;
-    font-size: 480pt;
-    margin-top: -504px;
+    width: 116px;
+    height: 116px;
+    font-size: 65pt;
+    margin-top: -64px;
   }
 
   timer .freeze-time-0 {
-    font-size: 755pt;
+    font-size: 95pt;
   }
 
   timer .timer {
     right: 25px;
-    width: 560px;
-    font-size: 60pt;
-  }
-
-}
-
-@media screen and (max-width: 1920px) and (max-height: 1200px) {
-
-  timer .freeze-time {
-    width: 655px;
-    height: 655px;
-    font-size: 370pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 570pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 500px;
-    font-size: 50pt;
-  }
-
-}
-
-@media screen and (max-width: 1920px) and (max-height: 1080px) {
-
-  timer .freeze-time {
-    width: 655px;
-    height: 655px;
-    font-size: 370pt;
-    margin-top: -204px;
+    width: 130px;
+    font-size: 16pt;
   }
   
-  timer .freeze-time-0 {
-    font-size: 570pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 480px;
-    font-size: 50pt;
-  }
-
 }
-
-@media screen and (max-width: 1600px) and (max-height: 2560px) {
-
-  timer .freeze-time {
-    width: 543px;
-    height: 543px;
-    font-size: 300pt;
-    margin-top: -504px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 470pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 560px;
-    font-size: 60pt;
-  }
-
-}
-
-@media screen and (max-width: 1366px) and (max-height: 768px) {
-
-  timer .freeze-time {
-    width: 465px;
-    height: 465px;
-    font-size: 260pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 405pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 240px;
-    font-size: 26pt;
-  }
-
-}
-
-@media screen and (max-width: 1280px) and (max-height: 800px) {
-
-  timer .freeze-time {
-    width: 435px;
-    height: 435px;
-    font-size: 250pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 380pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 275px;
-    font-size: 30pt;
-  }
-
-}
-
-@media screen and (max-width: 1280px) and (max-height: 720px) {
-
-  timer .freeze-time {
-    width: 435px;
-    height: 435px;
-    font-size: 250pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 380pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 275px;
-    font-size: 30pt;
-  }
-
-}
-
-@media screen and (max-width: 1200px) and (max-height: 1920px) {
-
-  timer .freeze-time {
-    width: 410px;
-    height: 410px;
-    font-size: 240pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 355pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 500px;
-    font-size: 50pt;
-  }
-
-}
-
-@media screen and (max-width: 1080px) and (max-height: 1920px) {
-
-  timer .freeze-time {
-    width: 380px;
-    height: 380px;
-    font-size: 210pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 320pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 480px;
-    font-size: 50pt;
-  }
-
-}
-
-@media screen and (max-width: 1024px) and (max-height: 768px) {
-
-  timer .freeze-time {
-    width: 350px;
-    height: 350px;
-    font-size: 200pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 305pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 225px;
-    font-size: 25pt;
-  }
-
-}
-
-@media screen and (max-width: 1024px) and (max-height: 600px) {
-
-  timer .freeze-time {
-    width: 350px;
-    height: 350px;
-    font-size: 200pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 305pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 225px;
-    font-size: 25pt;
-  }
-
-}
-
-@media screen and (max-width: 960px) and (max-height: 640px) {
-
-  timer .freeze-time {
-    width: 330px;
-    height: 330px;
-    font-size: 190pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 285pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 205px;
-    font-size: 23pt;
-  }
-
-}
-
-@media screen and (max-width: 960px) and (max-height: 540px) {
-
-  timer .freeze-time {
-    width: 330px;
-    height: 330px;
-    font-size: 190pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 285pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 205px;
-    font-size: 23pt;
-  }
-
-}
-
-@media screen and (max-width: 854px) and (max-height: 480px) {
-
-  timer .freeze-time {
-    width: 294px;
-    height: 294px;
-    font-size: 170pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 255pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 160px;
-    font-size: 19pt;
-  }
-
-}
-
-@media screen and (max-width: 800px) and (max-height: 1280px) {
-
-  timer .freeze-time {
-    width: 276px;
-    height: 276px;
-    font-size: 150pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 235pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 320px;
-    font-size: 35pt;
-  }
-
-}
-
-@media screen and (max-width: 800px) and (max-height: 600px) {
-
-  timer .freeze-time {
-    width: 276px;
-    height: 276px;
-    font-size: 150pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 237pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 195px;
-    font-size: 23pt;
-  }
-
-}
-
-@media screen and (max-width: 800px) and (max-height: 480px) {
-
-  timer .freeze-time {
-    width: 276px;
-    height: 276px;
-    font-size: 150pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 237pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 160px;
-    font-size: 19pt;
-  }
-
-}
-
-@media screen and (max-width: 768px) and (max-height: 1024px) {
-
-  timer .freeze-time {
-    width: 266px;
-    height: 266px;
-    font-size: 145pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 227pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 225px;
-    font-size: 25pt;
-  }
-
-}
-
-@media screen and (max-width: 720px) and (max-height: 1280px) {
-
-  timer .freeze-time {
-    width: 250px;
-    height: 250px;
-    font-size: 140pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 210pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 320px;
-    font-size: 35pt;
-  }
-
-}
-
-@media screen and (max-width: 640px) and (max-height: 960px) {
-
-  timer .freeze-time {
-    width: 223px;
-    height: 223px;
-    font-size: 130pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 190pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 205px;
-    font-size: 23pt;
-  }
-
-}
-
-@media screen and (max-width: 600px) and (max-height: 1024px) {
-
-  timer .freeze-time {
-    width: 210px;
-    height: 210px;
-    font-size: 120pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 175pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 225px;
-    font-size: 25pt;
-  }
-
-}
-
-@media screen and (max-width: 600px) and (max-height: 800px) {
-
-  timer .freeze-time {
-    width: 210px;
-    height: 210px;
-    font-size: 110pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 165pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 195px;
-    font-size: 23pt;
-  }
-
-}
-
-@media screen and (max-width: 540px) and (max-height: 960px) {
-
-  timer .freeze-time {
-    width: 190px;
-    height: 190px;
-    font-size: 110pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 160pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 205px;
-    font-size: 23pt;
-  }
-
-}
-
-@media screen and (max-width: 480px) and (max-height: 854px) {
-
-  timer .freeze-time {
-    width: 170px;
-    height: 170px;
-    font-size: 95pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 142pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 160px;
-    font-size: 19pt;
-  }
-
-}
-
-@media screen and (max-width: 480px) and (max-height: 800px) {
-
-  timer .freeze-time {
-    width: 170px;
-    height: 170px;
-    font-size: 90pt;
-    margin-top: -204px;
-  }
-
-  timer .freeze-time-0 {
-    font-size: 143pt;
-  }
-
-  timer .timer {
-    right: 25px;
-    width: 160px;
-    font-size: 19pt;
-  }
-
-}
-
-@media screen and (max-width: 480px) and (max-height: 320px) {
+@media screen and (min-width: 480px) and (min-height: 320px) {
 
   timer .freeze-time {
     width: 170px;
@@ -590,23 +85,527 @@ timer .freeze-time-0 {
 
 }
 
-@media screen and (max-width: 320px) and (max-height: 480px) {
+@media screen and (min-width: 480px) and (min-height: 800px) {
 
   timer .freeze-time {
-    width: 116px;
-    height: 116px;
-    font-size: 65pt;
-    margin-top: -64px;
+    width: 170px;
+    height: 170px;
+    font-size: 90pt;
+    margin-top: -204px;
   }
 
   timer .freeze-time-0 {
-    font-size: 95pt;
+    font-size: 143pt;
   }
 
   timer .timer {
     right: 25px;
-    width: 130px;
-    font-size: 16pt;
+    width: 160px;
+    font-size: 19pt;
+  }
+
+}
+
+@media screen and (min-width: 480px) and (min-height: 854px) {
+
+  timer .freeze-time {
+    width: 170px;
+    height: 170px;
+    font-size: 95pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 142pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 160px;
+    font-size: 19pt;
+  }
+
+}
+
+@media screen and (min-width: 540px) and (min-height: 960px) {
+
+  timer .freeze-time {
+    width: 190px;
+    height: 190px;
+    font-size: 110pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 160pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 205px;
+    font-size: 23pt;
+  }
+
+}
+
+@media screen and (min-width: 600px) and (min-height: 800px) {
+
+  timer .freeze-time {
+    width: 210px;
+    height: 210px;
+    font-size: 110pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 165pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 195px;
+    font-size: 23pt;
+  }
+
+}
+
+@media screen and (min-width: 600px) and (min-height: 1024px) {
+
+  timer .freeze-time {
+    width: 210px;
+    height: 210px;
+    font-size: 120pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 175pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 225px;
+    font-size: 25pt;
+  }
+
+}
+
+@media screen and (min-width: 640px) and (min-height: 960px) {
+
+  timer .freeze-time {
+    width: 223px;
+    height: 223px;
+    font-size: 130pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 190pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 205px;
+    font-size: 23pt;
+  }
+
+}
+
+@media screen and (min-width: 720px) and (min-height: 1280px) {
+
+  timer .freeze-time {
+    width: 250px;
+    height: 250px;
+    font-size: 140pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 210pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 320px;
+    font-size: 35pt;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+
+  timer .freeze-time {
+    width: 266px;
+    height: 266px;
+    font-size: 145pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 227pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 225px;
+    font-size: 25pt;
+  }
+
+}
+
+@media screen and (min-width: 800px) and (min-height: 480px) {
+
+  timer .freeze-time {
+    width: 276px;
+    height: 276px;
+    font-size: 150pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 237pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 160px;
+    font-size: 19pt;
+  }
+
+}
+
+@media screen and (min-width: 800px) and (min-height: 600px) {
+
+  timer .freeze-time {
+    width: 276px;
+    height: 276px;
+    font-size: 150pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 237pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 195px;
+    font-size: 23pt;
+  }
+
+}
+
+@media screen and (min-width: 800px) and (min-height: 1280px) {
+
+  timer .freeze-time {
+    width: 276px;
+    height: 276px;
+    font-size: 150pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 235pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 320px;
+    font-size: 35pt;
+  }
+
+}
+
+@media screen and (min-width: 854px) and (min-height: 480px) {
+
+  timer .freeze-time {
+    width: 294px;
+    height: 294px;
+    font-size: 170pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 255pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 160px;
+    font-size: 19pt;
+  }
+
+}
+
+@media screen and (min-width: 960px) and (min-height: 540px) {
+
+  timer .freeze-time {
+    width: 330px;
+    height: 330px;
+    font-size: 190pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 285pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 205px;
+    font-size: 23pt;
+  }
+
+}
+
+@media screen and (min-width: 960px) and (min-height: 640px) {
+
+  timer .freeze-time {
+    width: 330px;
+    height: 330px;
+    font-size: 190pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 285pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 205px;
+    font-size: 23pt;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (min-height: 600px) {
+
+  timer .freeze-time {
+    width: 350px;
+    height: 350px;
+    font-size: 200pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 305pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 225px;
+    font-size: 25pt;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (min-height: 768px) {
+
+  timer .freeze-time {
+    width: 350px;
+    height: 350px;
+    font-size: 200pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 305pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 225px;
+    font-size: 25pt;
+  }
+
+}
+
+@media screen and (min-width: 1080px) and (min-height: 1920px) {
+
+  timer .freeze-time {
+    width: 380px;
+    height: 380px;
+    font-size: 210pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 320pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 480px;
+    font-size: 50pt;
+  }
+
+}
+
+@media screen and (min-width: 1200px) and (min-height: 1920px) {
+
+  timer .freeze-time {
+    width: 410px;
+    height: 410px;
+    font-size: 240pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 355pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 500px;
+    font-size: 50pt;
+  }
+
+}
+
+@media screen and (min-width: 1280px) and (min-height: 720px) {
+
+  timer .freeze-time {
+    width: 435px;
+    height: 435px;
+    font-size: 250pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 380pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 275px;
+    font-size: 30pt;
+  }
+
+}
+
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+
+  timer .freeze-time {
+    width: 435px;
+    height: 435px;
+    font-size: 250pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 380pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 275px;
+    font-size: 30pt;
+  }
+
+}
+
+@media screen and (min-width: 1366px) and (min-height: 768px) {
+
+  timer .freeze-time {
+    width: 465px;
+    height: 465px;
+    font-size: 260pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 405pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 240px;
+    font-size: 26pt;
+  }
+
+}
+
+@media screen and (min-width: 1600px) and (min-height: 2560px) {
+
+  timer .freeze-time {
+    width: 543px;
+    height: 543px;
+    font-size: 300pt;
+    margin-top: -504px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 470pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 560px;
+    font-size: 60pt;
+  }
+
+}
+
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+
+  timer .freeze-time {
+    width: 655px;
+    height: 655px;
+    font-size: 370pt;
+    margin-top: -204px;
   }
   
+  timer .freeze-time-0 {
+    font-size: 570pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 480px;
+    font-size: 50pt;
+  }
+
+}
+
+@media screen and (min-width: 1920px) and (min-height: 1200px) {
+
+  timer .freeze-time {
+    width: 655px;
+    height: 655px;
+    font-size: 370pt;
+    margin-top: -204px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 570pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 500px;
+    font-size: 50pt;
+  }
+
+}
+
+@media screen and (min-width: 2560px) and (min-height: 1600px) {
+
+  timer .freeze-time {
+    width: 870px;
+    height: 870px;
+    font-size: 480pt;
+    margin-top: -504px;
+  }
+
+  timer .freeze-time-0 {
+    font-size: 755pt;
+  }
+
+  timer .timer {
+    right: 25px;
+    width: 560px;
+    font-size: 60pt;
+  }
+
 }
