@@ -1,11 +1,11 @@
 {
   "name": "bit-destroyer",
   "version": "0.0.1",
-  "homepage": "https://github.com/lekhmanrus/bit-destroyer",
+  "homepage": "http://lekhmanrus.github.io/bit-destroyer/",
   "authors": [
     "Ruslan Lekhman"
   ],
-  "description": "Logical game on phonegap for mobile.",
+  "description": "Logical game on phonegap | crosswalk for mobile.",
   "main": "Gruntfile.js",
   "keywords": [
     "phonegap",

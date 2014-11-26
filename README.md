@@ -2,6 +2,8 @@
 =============
 Logical game on phonegap | crosswalk for mobile.
 
+## [Demo](http://lekhmanrus.github.io/bit-destroyer/)
+
 ## Dependencies
 * [ADT (Android Developer Tools) Bundle](http://developer.android.com/sdk/index.html)
 * [Apache Ant](http://ant.apache.org/bindownload.cgi)
