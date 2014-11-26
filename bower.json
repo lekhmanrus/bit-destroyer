@@ -5,7 +5,7 @@
   "authors": [
     "Ruslan Lekhman"
   ],
-  "description": "Logical game on phomegap for mobile.",
+  "description": "Logical game on phonegap for mobile.",
   "main": "Gruntfile.js",
   "keywords": [
     "phonegap",
@@ -30,7 +30,6 @@
     "bootstrap": "latest",
     "angular-touch": "latest",
     "jquery": "~2.1.1",
-    "ngprogress": "~1.0.6",
-    "normalize.css": "latest"
+    "ngprogress": "~1.0.6"
   }
 }

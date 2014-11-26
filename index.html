@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="bower_components/angular-hotkeys/build/hotkeys.min.css" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/ngprogress/ngProgress.css" />
-    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
     <!-- endbower -->
     <link type="text/css" rel="stylesheet" href="css/animation.css" />
     <link type="text/css" rel="stylesheet" href="css/basic.css" />
@@ -40,7 +39,6 @@
     <script type="text/javascript" src="js/services/Timer.js"></script>
     <script type="text/javascript" src="js/services/TimerSettings.js"></script>
     <script type="text/javascript" src="js/directives/MainMenu.js"></script>
-    <script type="text/javascript" src="js/directives/NgClick.js"></script>
     <script type="text/javascript" src="js/directives/Playfield.js"></script>
     <script type="text/javascript" src="js/directives/Playitem.js"></script>
     <script type="text/javascript" src="js/directives/Timer.js"></script>
@@ -52,7 +50,7 @@
     <main-menu></main-menu>
 
     <div class="score">
-        <div class="best">Best: <span>100500</span>
+        <div class="best">Best: <span ng-bind="best"></span>
         </div>
         <div class="player">Score: <span ng-bind="scores"></span>
         </div>
@@ -75,6 +73,24 @@
     </div>
 
     <timer></timer>
+
+    <div class="download-block">
+      <a href="BitDestroyer.apk" class="btn btn-danger">
+        <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+        PhoneGap
+      </a>
+      <a href="BitDestroyer_crosswalk_arm.apk" class="btn btn-danger">
+        <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+        Crosswalk (ARM)
+      </a>
+      <a href="BitDestroyer_crosswalk_x86.apk" class="btn btn-danger">
+        <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+        Crosswalk (x86)
+      </a>
+      <a href="https://github.com/lekhmanrus/bit-destroyer" class="btn btn-default">
+        GitHub
+      </a>
+    </div>
 
 </body>
 

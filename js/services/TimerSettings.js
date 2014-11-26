@@ -3,8 +3,8 @@
 angular
 .module('BitDestroyerApp.services')
 .constant('TimerSettings', {
-  maxTime:  60,
-  timeLeft: 60,
+  maxTime:  15,
+  timeLeft: 15,
   visibility: false,
   timeLeftPercent: 100,
   height: '25px',

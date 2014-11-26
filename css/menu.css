@@ -49,3 +49,882 @@ main-menu > div .item span {
 main-menu > div .item span:hover {
   border-bottom: 0px;
 }
+
+@media screen and (min-width: 320px) and (min-height: 480px) {
+
+  main-menu > div {
+    font-size: 35pt;
+    padding-top: 50px;
+  }
+
+  main-menu > div .logo {
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+  }
+
+  main-menu > div .resume {
+    top: -15px;
+    right: 10px;
+  }
+
+  main-menu > div .item {
+    padding-top: 0px;
+    margin-top: -20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 3px dashed #D9534F;
+    font-size: 35pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 25pt;
+  }
+
+  hr.splitter {
+    margin-top: -10px;
+    margin-bottom: -15px;    
+  }
+  
+}
+
+@media screen and (min-width: 480px) and (min-height: 320px) {
+
+  main-menu > div {
+    font-size: 35pt;
+    padding-top: 20px;
+  }
+
+  main-menu > div .logo {
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+  }
+
+  main-menu > div .resume {
+    top: -15px;
+    right: 10px;
+  }
+
+  main-menu > div .item {
+    padding-top: 0px;
+    margin-top: -20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 3px dashed #D9534F;
+    font-size: 35pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 25pt;
+  }
+
+  hr.splitter {
+    margin-top: -10px;
+    margin-bottom: -15px;    
+  }
+
+}
+
+@media screen and (min-width: 480px) and (min-height: 854px) {
+
+  main-menu > div {
+    font-size: 50pt;
+    padding-top: 120px;
+  }
+
+  main-menu > div .logo {
+    background-size: 90px;
+    width: 90px;
+    height: 90px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 5px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 50pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 45pt;
+  }
+
+  hr.splitter {
+    margin-bottom: -20px;    
+  }
+
+}
+
+@media screen and (min-width: 540px) and (min-height: 960px) {
+
+  main-menu > div {
+    font-size: 55pt;
+    padding-top: 120px;
+  }
+
+  main-menu > div .logo {
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 55pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 45pt;
+  }
+
+  hr.splitter {
+    margin-bottom: -20px;    
+  }
+
+}
+
+@media screen and (min-width: 600px) and (min-height: 800px) {
+
+  main-menu > div {
+    font-size: 55pt;
+    padding-top: 120px;
+  }
+
+  main-menu > div .logo {
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 5px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 55pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 45pt;
+  }
+
+  hr.splitter {
+    margin-bottom: -20px;    
+  }
+
+}
+
+@media screen and (min-width: 600px) and (min-height: 1024px) {
+
+  main-menu > div {
+    font-size: 60pt;
+    padding-top: 120px;
+  }
+
+  main-menu > div .logo {
+    background-size: 120px;
+    width: 120px;
+    height: 120px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 60pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 45pt;
+  }
+
+}
+
+@media screen and (min-width: 640px) and (min-height: 960px) {
+
+  main-menu > div {
+    font-size: 60pt;
+    padding-top: 120px;
+  }
+
+  main-menu > div .logo {
+    background-size: 120px;
+    width: 120px;
+    height: 120px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 60pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 45pt;
+  }
+
+}
+
+@media screen and (min-width: 720px) and (min-height: 1280px) {
+
+  main-menu > div {
+    font-size: 70pt;
+    padding-top: 150px;
+  }
+
+  main-menu > div .logo {
+    background-size: 150px;
+    width: 150px;
+    height: 150px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 40px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 70pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 55pt;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+
+  main-menu > div {
+    font-size: 60pt;
+    padding-top: 120px;
+  }
+
+  main-menu > div .logo {
+    background-size: 120px;
+    width: 120px;
+    height: 120px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 60pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 50pt;
+  }
+
+}
+
+@media screen and (min-width: 800px) and (min-height: 600px) {
+
+  main-menu > div {
+    font-size: 60pt;
+    padding-top: 50px;
+  }
+
+  main-menu > div .logo {
+    background-size: 120px;
+    width: 120px;
+    height: 120px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 5px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 60pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 45pt;
+  }
+
+  hr.splitter {
+    margin-bottom: -20px;    
+  }
+
+}
+
+@media screen and (min-width: 800px) and (min-height: 1280px) {
+
+  main-menu > div {
+    font-size: 80pt;
+    padding-top: 150px;
+  }
+
+  main-menu > div .logo {
+    background-size: 150px;
+    width: 150px;
+    height: 150px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 50px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 80pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 55pt;
+  }
+
+}
+
+@media screen and (min-width: 854px) and (min-height: 480px) {
+
+  main-menu > div {
+    font-size: 50pt;
+    padding-top: 50px;
+  }
+
+  main-menu > div .logo {
+    background-size: 90px;
+    width: 90px;
+    height: 90px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 5px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 50pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 45pt;
+  }
+
+  hr.splitter {
+    margin-bottom: -25px;    
+  }
+
+}
+
+@media screen and (min-width: 960px) and (min-height: 540px) {
+
+  main-menu > div {
+    font-size: 60pt;
+    padding-top: 30px;
+  }
+
+  main-menu > div .logo {
+    background-size: 120px;
+    width: 120px;
+    height: 120px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 60pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 45pt;
+  }
+
+  hr.splitter {
+    margin-bottom: -20px;    
+  }
+
+}
+
+@media screen and (min-width: 960px) and (min-height: 640px) {
+
+  main-menu > div {
+    font-size: 60pt;
+    padding-top: 100px;
+  }
+
+  main-menu > div .logo {
+    background-size: 120px;
+    width: 120px;
+    height: 120px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 60pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 45pt;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (min-height: 600px) {
+
+  main-menu > div {
+    font-size: 60pt;
+    padding-top: 70px;
+  }
+
+  main-menu > div .logo {
+    background-size: 120px;
+    width: 120px;
+    height: 120px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 60pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 45pt;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (min-height: 768px) {
+
+  main-menu > div {
+    font-size: 60pt;
+    padding-top: 100px;
+  }
+
+  main-menu > div .logo {
+    background-size: 120px;
+    width: 120px;
+    height: 120px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 20px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 60pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 50pt;
+  }
+
+}
+
+@media screen and (min-width: 1080px) and (min-height: 1920px) {
+
+  main-menu > div {
+    font-size: 110pt;
+    padding-top: 200px;
+  }
+
+  main-menu > div .logo {
+    background-size: 180px;
+    width: 180px;
+    height: 180px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 110px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 10px dashed #D9534F;
+    font-size: 110pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 70pt;
+  }
+
+}
+
+@media screen and (min-width: 1200px) and (min-height: 1920px) {
+
+  main-menu > div {
+    font-size: 120pt;
+    padding-top: 200px;
+  }
+
+  main-menu > div .logo {
+    background-size: 220px;
+    width: 220px;
+    height: 220px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 175px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 10px dashed #D9534F;
+    font-size: 120pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 80pt;
+  }
+
+}
+
+@media screen and (min-width: 1280px) and (min-height: 720px) {
+
+  main-menu > div {
+    font-size: 80pt;
+    padding-top: 100px;
+  }
+
+  main-menu > div .logo {
+    background-size: 150px;
+    width: 150px;
+    height: 150px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 50px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 80pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 55pt;
+  }
+
+}
+
+@media screen and (min-width: 1280px) and (min-height: 800px) { 
+
+  main-menu > div {
+    font-size: 80pt;
+    padding-top: 100px;
+  }
+
+  main-menu > div .logo {
+    background-size: 150px;
+    width: 150px;
+    height: 150px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 50px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 80pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 55pt;
+  }
+
+}
+
+@media screen and (min-width: 1366px) and (min-height: 768px) {
+
+  main-menu > div {
+    font-size: 80pt;
+    padding-top: 100px;
+  }
+
+  main-menu > div .logo {
+    background-size: 150px;
+    width: 150px;
+    height: 150px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 50px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 7px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 80pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 55pt;
+  }
+
+}
+
+@media screen and (min-width: 1600px) and (min-height: 2560px) {
+
+  main-menu > div {
+    font-size: 160pt;
+    padding-top: 300px;
+  }
+
+  main-menu > div .logo {
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 225px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 10px dashed #D9534F;
+    font-size: 200pt;
+  }
+
+  main-menu > div .resume .large {
+    font-size: 90pt;
+  }
+
+}
+
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+
+  main-menu > div {
+    font-size: 130pt;
+    padding-top: 100px;
+  }
+
+  main-menu > div .logo {
+    background-size: 210px;
+    width: 210px;
+    height: 210px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 125px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 10px dashed #D9534F;
+    font-size: 130pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 70pt;
+  }
+
+}
+
+@media screen and (min-width: 1920px) and (min-height: 1200px) {
+
+  main-menu > div {
+    font-size: 150pt;
+    padding-top: 100px;
+  }
+
+  main-menu > div .logo {
+    background-size: 250px;
+    width: 250px;
+    height: 250px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 175px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 10px dashed #D9534F;
+    font-size: 150pt;
+  }
+  
+  main-menu > div .resume .large {
+    font-size: 80pt;
+  }
+
+}
+
+@media screen and (min-width: 2560px) and (min-height: 1600px) {
+
+  main-menu > div {
+    font-size: 200pt;
+    padding-top: 200px;
+  }
+
+  main-menu > div .logo {
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+  }
+
+  main-menu > div .resume {
+    top: 0px;
+    right: 15px;
+  }
+
+  main-menu > div .item {
+    padding-top: 225px;
+  }
+
+  main-menu > div .item span {
+    border-bottom: 10px dashed #D9534F;
+    margin-top: 150px;
+    font-size: 200pt;
+  }
+
+  main-menu > div .resume .large {
+    font-size: 90pt;
+  }
+
+}
